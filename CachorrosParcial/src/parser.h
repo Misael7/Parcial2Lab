@@ -8,7 +8,7 @@
 #ifndef PARSER_H_
 #define PARSER_H_
 #include "LinkedList.h"
-int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee);
-int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee);
+int parser_CachorroFromText(FILE* pFile , LinkedList* pListCachorro);
+int parser_CachorroFromBinary(FILE* pFile , LinkedList* pListCachorro);
 
 #endif /* PARSER_H_ */

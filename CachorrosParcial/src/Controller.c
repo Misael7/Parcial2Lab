@@ -16,7 +16,8 @@ int controller_loadFromText(char* path , LinkedList* pListCachorro)
 		}
 		else
 		{
-			parser_EmployeeFromText(pFile, pListCachorro);
+			parser_CachorroFromText(pFile, pListCachorro);
+			printf("Exito de parseo");
 		}
 		fclose(pFile);
     return 1;
@@ -47,19 +48,21 @@ int controller_ListCachorro(LinkedList* pListCachorro)
 	char dias[50];
 	char reservado[50];
 	char genero[50];
-
+	Cachorro* cachorro;
 	for(int i =0 ; i <ll_len(pListCachorro); i++)
 	{
-	Cachorro* cachorro;
-	cachorro=ll_get(pListCachorro, i); // equivalente empleado = array[i]
-	//change to getter setter
+	cachorro=ll_get(pListCachorro, i);
+	printf("\nAsigna cachorros ll_get\n");
 	cachorro_getId(cachorro,id_cachorro);
+	printf("\nAsigna cachorros id\n");
 	cachorro_getNombre(cachorro,nombre);
+	printf("\nAsigna cachorros nombre\n");
 	cachorro_getDias(cachorro, dias);
+	printf("\nAsigna cachorros dias\n");
 	cachorro_getReservado(cachorro,reservado);
+	printf("\nAsigna cachorros reservado\n");
 	cachorro_getGenero(cachorro,genero);
-
-	//change to getter setter
+	printf("\nAsigna cachorros\n");
 	printf("\nID Cachorro %s\nNombre  %s\n dias %s\n reservado%s\n genero%s\n",id_cachorro, nombre , dias , reservado, genero);
 	}
     return 1;

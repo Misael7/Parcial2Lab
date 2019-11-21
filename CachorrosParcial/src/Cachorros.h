@@ -13,6 +13,7 @@ typedef struct
 	char id_cachorro[50];
 	char nombre[50];
 	char dias[50];
+	char raza[50];
 	char reservado[50];
 	char genero[50];
 }Cachorro;
@@ -23,6 +24,8 @@ int cachorro_setNombre(Cachorro* this,char* nombre);
 int cachorro_getNombre(Cachorro* this,char* nombre);
 int cachorro_setDias(Cachorro* this,char* dias);
 int cachorro_getDias(Cachorro* this,char* dias);
+int cachorro_setRaza(Cachorro* this,char* raza);
+int cachorro_getRaza(Cachorro* this,char* raza);
 int cachorro_setReservado(Cachorro* this,char* reservado);
 int cachorro_getReservado(Cachorro* this,char* reservado);
 int cachorro_setGenero(Cachorro* this,char* genero);

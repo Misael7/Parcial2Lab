@@ -12,29 +12,31 @@
 #include <stdlib.h>
 #include "LinkedList.h"
 #define FLUSH __fpurge(stdin);
+
 int main(void)
 {
     int option = 0;
-    LinkedList* listaEmpleados = ll_newLinkedList();
+    LinkedList* pListCachorro = ll_newLinkedList();
     do{
-       	printf("\n1. Cargar los datos de los cachorros desde el archivo data.csv (modo texto).\n");
-       	printf("2. Cargar los datos de los cachorros desde el archivo data.csv (modo binario).\n");       ;
+       	printf("\n1. Cargar los datos de los cachorros desde el archivo cachorros.csv (modo texto).\n");
+       	printf("2. Cargar los datos de los cachorros desde el archivo cachorros.csv (modo binario).\n");
+       	printf("3. Print Lista de Cachorros\n");
        	printf("10. EXIT.\n");
        	FLUSH;
        	scanf("%d",&option);
            switch(option)
            {
                case 1:
-                   controller_loadFromText("cachorros.csv",listaEmpleados);
+                   controller_loadFromText("cachorros.csv",pListCachorro);
                    break;
 
                case 2:
-               	controller_loadFromBinary("cachorros.bin",listaEmpleados);
-               	break;
+            	   controller_loadFromBinary("cachorros.bin",pListCachorro);
+            	   break;
 
-
-
-
+               case 3:
+            	   controller_ListCachorro(pListCachorro);
+				   break;
            }
        }while(option != 10);
        return 0;

@@ -8,25 +8,22 @@
 #include "LinkedList.h"
 #include "Cachorros.h"
 
-int parser_EmployeeFromText(FILE* pFile , LinkedList* pListCachorros)
+int parser_CachorroFromText(FILE* pFile , LinkedList* pListCachorros)
 {
 	int r;
 	int pos=0;
-	char var1[50],var3[50],var2[50],var4[50],var5[50];
+	char var1[50],var2[50],var3[50],var4[50],var5[50];
 
 	do
 	{
-			r = fscanf(pFile,"%[^,],%[^,],%[^,]%[^,],%[^\n]\n",var1,var2,var3,var4,var5);
-			if(r==4)
+			r = fscanf(pFile,"%[^,],%[^,],%[^,],%[^,],%[^\n]\n",var1,var2,var3,var4,var5);
+			if(r==5)
 			{
 
-
-				 int id = atoi(var1);
 					 Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
 					 if(cachorro!=NULL)
 					 {
-						 ll_add(pListCachorros,cachorro); // Equivalente a array[pos]=empleado
-
+						 ll_add(pListCachorros,cachorro);
 					 }
 
 			}
@@ -43,8 +40,7 @@ int parser_EmployeeFromText(FILE* pFile , LinkedList* pListCachorros)
  * \return int
  *
  */
-#include "Cachorros.h"
-#include "LinkedList.h"
+
 
 int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pListCachorros)
 {

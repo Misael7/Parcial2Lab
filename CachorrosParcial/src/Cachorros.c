@@ -30,8 +30,9 @@ Cachorro* cachorro_newParametros(char* id_cachorro,char* nombre,char* dias,char*
 				cachorro_setDias(this,dias) == EXIT_SUCCESS &&
 				cachorro_setReservado(this,reservado) == EXIT_SUCCESS &&
 				cachorro_setGenero(this,genero) == EXIT_SUCCESS)
-		{
 
+		{
+				printf("\n Cachorros setteados \n");
 				retorno = this;
 		}
 		else
@@ -63,7 +64,7 @@ int cachorro_getId(Cachorro* this,char* id_cachorro)
 
 	if(this != NULL && id_cachorro != NULL)
 	{
-		strcpy(*id_cachorro,this->id_cachorro);
+		strcpy(id_cachorro,this->id_cachorro);
 		retorno = EXIT_SUCCESS;
 	}
 
@@ -121,6 +122,35 @@ int cachorro_getDias(Cachorro* this,char* dias)
 
 	return retorno;
 }
+
+int cachorro_setRaza(Cachorro* this,char* raza)
+{
+	int retorno = EXIT_FAILURE;
+
+	if(this != NULL)
+	{
+		strcpy(this->raza,raza);
+		retorno = EXIT_SUCCESS;
+	}
+
+	return retorno;
+}
+
+int cachorro_getRaza(Cachorro* this,char* raza)
+{
+	int retorno = EXIT_FAILURE;
+
+	if(this != NULL && raza != NULL)
+	{
+		strcpy(raza,this->raza);
+		retorno = EXIT_SUCCESS;
+	}
+
+	return retorno;
+}
+
+
+
 
 int cachorro_setReservado(Cachorro* this,char* reservado)
 {
