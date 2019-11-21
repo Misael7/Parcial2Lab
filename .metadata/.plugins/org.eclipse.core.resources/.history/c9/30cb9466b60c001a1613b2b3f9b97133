@@ -60,7 +60,7 @@ int controller_ListCachorro(LinkedList* pListCachorro)
 	cachorro_getReservado(cachorro,reservado);
 	cachorro_getGenero(cachorro,genero);
 
-	printf("\nID Cachorro %s\nNombre  %s\n dias %s\n raza %s\n reservado%s\n genero%s\n",id_cachorro, nombre , dias , reservado, genero);
+	printf("\nID Cachorro %s\nNombre  %s\n dias %s\n reservado%s\n genero%s\n",id_cachorro, nombre , dias , reservado, genero);
 	}
     return 1;
 }
