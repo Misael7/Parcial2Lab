@@ -1,0 +1,3100 @@
+19:17:05 **** Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/CachorrosParcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CachorrosParcial.d" -MT"src/CachorrosParcial.o" -o "src/CachorrosParcial.o" "../src/CachorrosParcial.c"
+Finished building: ../src/CachorrosParcial.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/CachorrosParcial.o   
+Finished building target: CachorrosParcial
+ 
+19:18:27 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/LinkedList.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.o" -o "src/LinkedList.o" "../src/LinkedList.c"
+../src/LinkedList.c:14:8: error: unknown type name ‘Node’
+ static Node* getNode(LinkedList* this, int nodeIndex);
+        ^~~~
+../src/LinkedList.c:14:22: error: unknown type name ‘LinkedList’
+ static Node* getNode(LinkedList* this, int nodeIndex);
+                      ^~~~~~~~~~
+../src/LinkedList.c:15:20: error: unknown type name ‘LinkedList’
+ static int addNode(LinkedList* this, int nodeIndex,void* pElement);
+                    ^~~~~~~~~~
+../src/LinkedList.c:16:17: error: unknown type name ‘Node’
+ void ll_swapper(Node *first,Node *second);
+                 ^~~~
+../src/LinkedList.c:16:29: error: unknown type name ‘Node’
+ void ll_swapper(Node *first,Node *second);
+                             ^~~~
+../src/LinkedList.c:30:1: error: unknown type name ‘LinkedList’
+ LinkedList* ll_newLinkedList(void)
+ ^~~~~~~~~~
+../src/LinkedList.c: In function ‘ll_newLinkedList’:
+../src/LinkedList.c:32:5: error: unknown type name ‘LinkedList’
+     LinkedList* this= NULL;
+     ^~~~~~~~~~
+../src/LinkedList.c:33:13: error: ‘LinkedList’ undeclared (first use in this function)
+     this = (LinkedList*)malloc(sizeof(LinkedList*));
+             ^~~~~~~~~~
+../src/LinkedList.c:33:13: note: each undeclared identifier is reported only once for each function it appears in
+../src/LinkedList.c:33:24: error: expected expression before ‘)’ token
+     this = (LinkedList*)malloc(sizeof(LinkedList*));
+                        ^
+../src/LinkedList.c:36:7: error: request for member ‘pFirstNode’ in something not a structure or union
+   this->pFirstNode=NULL;
+       ^~
+../src/LinkedList.c:37:7: error: request for member ‘size’ in something not a structure or union
+   this->size=0;
+       ^~
+../src/LinkedList.c: At top level:
+../src/LinkedList.c:50:12: error: unknown type name ‘LinkedList’
+ int ll_len(LinkedList* this)
+            ^~~~~~~~~~
+../src/LinkedList.c:70:8: error: unknown type name ‘Node’
+ static Node* getNode(LinkedList* this, int nodeIndex)
+        ^~~~
+../src/LinkedList.c:70:22: error: unknown type name ‘LinkedList’
+ static Node* getNode(LinkedList* this, int nodeIndex)
+                      ^~~~~~~~~~
+../src/LinkedList.c:111:1: error: unknown type name ‘Node’
+ Node* test_getNode(LinkedList* this, int nodeIndex)
+ ^~~~
+../src/LinkedList.c:111:20: error: unknown type name ‘LinkedList’
+ Node* test_getNode(LinkedList* this, int nodeIndex)
+                    ^~~~~~~~~~
+../src/LinkedList.c:127:20: error: unknown type name ‘LinkedList’
+ static int addNode(LinkedList* this, int nodeIndex,void* pElement)
+                    ^~~~~~~~~~
+../src/LinkedList.c:170:18: error: unknown type name ‘LinkedList’
+ int test_addNode(LinkedList* this, int nodeIndex,void* pElement)
+                  ^~~~~~~~~~
+../src/LinkedList.c:183:12: error: unknown type name ‘LinkedList’
+ int ll_add(LinkedList* this, void* pElement)
+            ^~~~~~~~~~
+../src/LinkedList.c:211:14: error: unknown type name ‘LinkedList’
+ void* ll_get(LinkedList* this, int index)
+              ^~~~~~~~~~
+../src/LinkedList.c:234:12: error: unknown type name ‘LinkedList’
+ int ll_set(LinkedList* this, int index,void* pElement)
+            ^~~~~~~~~~
+../src/LinkedList.c:261:15: error: unknown type name ‘LinkedList’
+ int ll_remove(LinkedList* this,int index)
+               ^~~~~~~~~~
+../src/LinkedList.c:308:14: error: unknown type name ‘LinkedList’
+ int ll_clear(LinkedList* this)
+              ^~~~~~~~~~
+../src/LinkedList.c:334:25: error: unknown type name ‘LinkedList’
+ int ll_deleteLinkedList(LinkedList* this)
+                         ^~~~~~~~~~
+../src/LinkedList.c:358:16: error: unknown type name ‘LinkedList’
+ int ll_indexOf(LinkedList* this, void* pElement)
+                ^~~~~~~~~~
+../src/LinkedList.c:387:16: error: unknown type name ‘LinkedList’
+ int ll_isEmpty(LinkedList* this)
+                ^~~~~~~~~~
+../src/LinkedList.c:413:13: error: unknown type name ‘LinkedList’
+ int ll_push(LinkedList* this, int index, void* pElement)
+             ^~~~~~~~~~
+../src/LinkedList.c:432:14: error: unknown type name ‘LinkedList’
+ void* ll_pop(LinkedList* this,int index)
+              ^~~~~~~~~~
+../src/LinkedList.c:454:17: error: unknown type name ‘LinkedList’
+ int ll_contains(LinkedList* this, void* pElement)
+                 ^~~~~~~~~~
+../src/LinkedList.c:487:20: error: unknown type name ‘LinkedList’
+ int ll_containsAll(LinkedList* this,LinkedList* this2)
+                    ^~~~~~~~~~
+../src/LinkedList.c:487:37: error: unknown type name ‘LinkedList’
+ int ll_containsAll(LinkedList* this,LinkedList* this2)
+                                     ^~~~~~~~~~
+../src/LinkedList.c:518:1: error: unknown type name ‘LinkedList’
+ LinkedList* ll_subList(LinkedList* this,int from,int to)
+ ^~~~~~~~~~
+../src/LinkedList.c:518:24: error: unknown type name ‘LinkedList’
+ LinkedList* ll_subList(LinkedList* this,int from,int to)
+                        ^~~~~~~~~~
+../src/LinkedList.c:546:1: error: unknown type name ‘LinkedList’
+ LinkedList* ll_clone(LinkedList* this)
+ ^~~~~~~~~~
+../src/LinkedList.c:546:22: error: unknown type name ‘LinkedList’
+ LinkedList* ll_clone(LinkedList* this)
+                      ^~~~~~~~~~
+../src/LinkedList.c:573:13: error: unknown type name ‘LinkedList’
+ int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order)
+             ^~~~~~~~~~
+../src/LinkedList.c:609:17: error: unknown type name ‘Node’
+ void ll_swapper(Node *first,Node *second)
+                 ^~~~
+../src/LinkedList.c:609:29: error: unknown type name ‘Node’
+ void ll_swapper(Node *first,Node *second)
+                             ^~~~
+../src/LinkedList.c:616:16: error: unknown type name ‘LinkedList’
+ int ll_counter(LinkedList* this, int (*pFunc)(void*))
+                ^~~~~~~~~~
+../src/LinkedList.c:632:12: error: unknown type name ‘LinkedList’
+ int ll_map(LinkedList* this, int (*pFunc)(void*))
+            ^~~~~~~~~~
+../src/LinkedList.c: In function ‘funcionContar’:
+../src/LinkedList.c:656:17: error: ‘pEstructura’ undeclared (first use in this function)
+  /*Estructura*/ pEstructura = pContarElemento;
+                 ^~~~~~~~~~~
+../src/LinkedList.c:657:66: error: expected expression before ‘)’ token
+  if(pContarElemento != NULL && /*Condicional tamaño not vacío*/)
+                                                                  ^
+make: *** [src/LinkedList.o] Error 1
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/LinkedList.o'
+"make all" terminated with exit code 2. Build might be incomplete.
+19:18:28 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/LinkedList.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.o" -o "src/LinkedList.o" "../src/LinkedList.c"
+../src/LinkedList.c:14:8: error: unknown type name ‘Node’
+ static Node* getNode(LinkedList* this, int nodeIndex);
+        ^~~~
+../src/LinkedList.c:14:22: error: unknown type name ‘LinkedList’
+ static Node* getNode(LinkedList* this, int nodeIndex);
+                      ^~~~~~~~~~
+../src/LinkedList.c:15:20: error: unknown type name ‘LinkedList’
+ static int addNode(LinkedList* this, int nodeIndex,void* pElement);
+                    ^~~~~~~~~~
+../src/LinkedList.c:16:17: error: unknown type name ‘Node’
+ void ll_swapper(Node *first,Node *second);
+                 ^~~~
+../src/LinkedList.c:16:29: error: unknown type name ‘Node’
+ void ll_swapper(Node *first,Node *second);
+                             ^~~~
+../src/LinkedList.c:30:1: error: unknown type name ‘LinkedList’
+ LinkedList* ll_newLinkedList(void)
+ ^~~~~~~~~~
+../src/LinkedList.c: In function ‘ll_newLinkedList’:
+../src/LinkedList.c:32:5: error: unknown type name ‘LinkedList’
+     LinkedList* this= NULL;
+     ^~~~~~~~~~
+../src/LinkedList.c:33:13: error: ‘LinkedList’ undeclared (first use in this function)
+     this = (LinkedList*)malloc(sizeof(LinkedList*));
+             ^~~~~~~~~~
+../src/LinkedList.c:33:13: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/LinkedList.o'
+../src/LinkedList.c:33:24: error: expected expression before ‘)’ token
+     this = (LinkedList*)malloc(sizeof(LinkedList*));
+                        ^
+../src/LinkedList.c:36:7: error: request for member ‘pFirstNode’ in something not a structure or union
+   this->pFirstNode=NULL;
+       ^~
+../src/LinkedList.c:37:7: error: request for member ‘size’ in something not a structure or union
+   this->size=0;
+       ^~
+../src/LinkedList.c: At top level:
+../src/LinkedList.c:50:12: error: unknown type name ‘LinkedList’
+ int ll_len(LinkedList* this)
+            ^~~~~~~~~~
+../src/LinkedList.c:70:8: error: unknown type name ‘Node’
+ static Node* getNode(LinkedList* this, int nodeIndex)
+        ^~~~
+../src/LinkedList.c:70:22: error: unknown type name ‘LinkedList’
+ static Node* getNode(LinkedList* this, int nodeIndex)
+                      ^~~~~~~~~~
+../src/LinkedList.c:111:1: error: unknown type name ‘Node’
+ Node* test_getNode(LinkedList* this, int nodeIndex)
+ ^~~~
+../src/LinkedList.c:111:20: error: unknown type name ‘LinkedList’
+ Node* test_getNode(LinkedList* this, int nodeIndex)
+                    ^~~~~~~~~~
+../src/LinkedList.c:127:20: error: unknown type name ‘LinkedList’
+ static int addNode(LinkedList* this, int nodeIndex,void* pElement)
+                    ^~~~~~~~~~
+../src/LinkedList.c:170:18: error: unknown type name ‘LinkedList’
+ int test_addNode(LinkedList* this, int nodeIndex,void* pElement)
+                  ^~~~~~~~~~
+../src/LinkedList.c:183:12: error: unknown type name ‘LinkedList’
+ int ll_add(LinkedList* this, void* pElement)
+            ^~~~~~~~~~
+../src/LinkedList.c:211:14: error: unknown type name ‘LinkedList’
+ void* ll_get(LinkedList* this, int index)
+              ^~~~~~~~~~
+../src/LinkedList.c:234:12: error: unknown type name ‘LinkedList’
+ int ll_set(LinkedList* this, int index,void* pElement)
+            ^~~~~~~~~~
+../src/LinkedList.c:261:15: error: unknown type name ‘LinkedList’
+ int ll_remove(LinkedList* this,int index)
+               ^~~~~~~~~~
+../src/LinkedList.c:308:14: error: unknown type name ‘LinkedList’
+ int ll_clear(LinkedList* this)
+              ^~~~~~~~~~
+../src/LinkedList.c:334:25: error: unknown type name ‘LinkedList’
+ int ll_deleteLinkedList(LinkedList* this)
+                         ^~~~~~~~~~
+../src/LinkedList.c:358:16: error: unknown type name ‘LinkedList’
+ int ll_indexOf(LinkedList* this, void* pElement)
+                ^~~~~~~~~~
+../src/LinkedList.c:387:16: error: unknown type name ‘LinkedList’
+ int ll_isEmpty(LinkedList* this)
+                ^~~~~~~~~~
+../src/LinkedList.c:413:13: error: unknown type name ‘LinkedList’
+ int ll_push(LinkedList* this, int index, void* pElement)
+             ^~~~~~~~~~
+../src/LinkedList.c:432:14: error: unknown type name ‘LinkedList’
+ void* ll_pop(LinkedList* this,int index)
+              ^~~~~~~~~~
+../src/LinkedList.c:454:17: error: unknown type name ‘LinkedList’
+ int ll_contains(LinkedList* this, void* pElement)
+                 ^~~~~~~~~~
+../src/LinkedList.c:487:20: error: unknown type name ‘LinkedList’
+ int ll_containsAll(LinkedList* this,LinkedList* this2)
+                    ^~~~~~~~~~
+../src/LinkedList.c:487:37: error: unknown type name ‘LinkedList’
+ int ll_containsAll(LinkedList* this,LinkedList* this2)
+                                     ^~~~~~~~~~
+../src/LinkedList.c:518:1: error: unknown type name ‘LinkedList’
+ LinkedList* ll_subList(LinkedList* this,int from,int to)
+ ^~~~~~~~~~
+../src/LinkedList.c:518:24: error: unknown type name ‘LinkedList’
+ LinkedList* ll_subList(LinkedList* this,int from,int to)
+                        ^~~~~~~~~~
+../src/LinkedList.c:546:1: error: unknown type name ‘LinkedList’
+ LinkedList* ll_clone(LinkedList* this)
+ ^~~~~~~~~~
+../src/LinkedList.c:546:22: error: unknown type name ‘LinkedList’
+ LinkedList* ll_clone(LinkedList* this)
+                      ^~~~~~~~~~
+../src/LinkedList.c:573:13: error: unknown type name ‘LinkedList’
+ int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order)
+             ^~~~~~~~~~
+../src/LinkedList.c:609:17: error: unknown type name ‘Node’
+ void ll_swapper(Node *first,Node *second)
+                 ^~~~
+../src/LinkedList.c:609:29: error: unknown type name ‘Node’
+ void ll_swapper(Node *first,Node *second)
+                             ^~~~
+../src/LinkedList.c:616:16: error: unknown type name ‘LinkedList’
+ int ll_counter(LinkedList* this, int (*pFunc)(void*))
+                ^~~~~~~~~~
+../src/LinkedList.c:632:12: error: unknown type name ‘LinkedList’
+ int ll_map(LinkedList* this, int (*pFunc)(void*))
+            ^~~~~~~~~~
+../src/LinkedList.c: In function ‘funcionContar’:
+../src/LinkedList.c:656:17: error: ‘pEstructura’ undeclared (first use in this function)
+  /*Estructura*/ pEstructura = pContarElemento;
+                 ^~~~~~~~~~~
+../src/LinkedList.c:657:66: error: expected expression before ‘)’ token
+  if(pContarElemento != NULL && /*Condicional tamaño not vacío*/)
+                                                                  ^
+make: *** [src/LinkedList.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:18:46 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/LinkedList.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.o" -o "src/LinkedList.o" "../src/LinkedList.c"
+../src/LinkedList.c: In function ‘ll_add’:
+../src/LinkedList.c:193:11: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   auxNode = addNode(this,length, pElement);
+           ^
+../src/LinkedList.c:188:8: warning: variable ‘auxNode’ set but not used [-Wunused-but-set-variable]
+  Node* auxNode;
+        ^~~~~~~
+../src/LinkedList.c: In function ‘funcionContar’:
+../src/LinkedList.c:656:17: error: ‘pEstructura’ undeclared (first use in this function)
+  /*Estructura*/ pEstructura = pContarElemento;
+                 ^~~~~~~~~~~
+../src/LinkedList.c:656:17: note: each undeclared identifier is reported only once for each function it appears in
+../src/LinkedList.c:657:66: error: expected expression before ‘)’ token
+  if(pContarElemento != NULL && /*Condicional tamaño not vacío*/)
+                                                                  ^
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/LinkedList.o'
+make: *** [src/LinkedList.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:18:47 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/LinkedList.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.o" -o "src/LinkedList.o" "../src/LinkedList.c"
+../src/LinkedList.c: In function ‘ll_add’:
+../src/LinkedList.c:193:11: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   auxNode = addNode(this,length, pElement);
+           ^
+../src/LinkedList.c:188:8: warning: variable ‘auxNode’ set but not used [-Wunused-but-set-variable]
+  Node* auxNode;
+        ^~~~~~~
+../src/LinkedList.c: In function ‘funcionContar’:
+../src/LinkedList.c:656:17: error: ‘pEstructura’ undeclared (first use in this function)
+  /*Estructura*/ pEstructura = pContarElemento;
+                 ^~~~~~~~~~~
+../src/LinkedList.c:656:17: note: each undeclared identifier is reported only once for each function it appears in
+../src/LinkedList.c:657:66: error: expected expression before ‘)’ token
+  if(pContarElemento != NULL && /*Condicional tamaño not vacío*/)
+                                                                  ^
+make: *** [src/LinkedList.o] Error 1
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/LinkedList.o'
+"make all" terminated with exit code 2. Build might be incomplete.
+19:18:47 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/LinkedList.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.o" -o "src/LinkedList.o" "../src/LinkedList.c"
+../src/LinkedList.c: In function ‘ll_add’:
+../src/LinkedList.c:193:11: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   auxNode = addNode(this,length, pElement);
+           ^
+../src/LinkedList.c:188:8: warning: variable ‘auxNode’ set but not used [-Wunused-but-set-variable]
+  Node* auxNode;
+        ^~~~~~~
+../src/LinkedList.c: In function ‘funcionContar’:
+../src/LinkedList.c:656:17: error: ‘pEstructura’ undeclared (first use in this function)
+  /*Estructura*/ pEstructura = pContarElemento;
+                 ^~~~~~~~~~~
+../src/LinkedList.c:656:17: note: each undeclared identifier is reported only once for each function it appears in
+../src/LinkedList.c:657:66: error: expected expression before ‘)’ token
+  if(pContarElemento != NULL && /*Condicional tamaño not vacío*/)
+                                                                  ^
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/LinkedList.o'
+make: *** [src/LinkedList.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:19:06 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/LinkedList.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.o" -o "src/LinkedList.o" "../src/LinkedList.c"
+../src/LinkedList.c: In function ‘ll_add’:
+../src/LinkedList.c:193:11: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   auxNode = addNode(this,length, pElement);
+           ^
+../src/LinkedList.c:188:8: warning: variable ‘auxNode’ set but not used [-Wunused-but-set-variable]
+  Node* auxNode;
+        ^~~~~~~
+../src/LinkedList.c: At top level:
+../src/LinkedList.c:656:2: warning: "/*" within comment [-Wcomment]
+  /*Estructura*/ pEstructura = pContarElemento;
+   
+../src/LinkedList.c:656:17: warning: data definition has no type or storage class
+  /*Estructura*/ pEstructura = pContarElemento;
+                 ^~~~~~~~~~~
+../src/LinkedList.c:656:17: warning: type defaults to ‘int’ in declaration of ‘pEstructura’ [-Wimplicit-int]
+../src/LinkedList.c:656:31: error: ‘pContarElemento’ undeclared here (not in a function)
+  /*Estructura*/ pEstructura = pContarElemento;
+                               ^~~~~~~~~~~~~~~
+../src/LinkedList.c:657:2: error: expected identifier or ‘(’ before ‘if’
+  if(pContarElemento != NULL && /*Condicional tamaño not vacío*/)
+  ^~
+../src/LinkedList.c:661:2: error: expected identifier or ‘(’ before ‘else’
+  else
+  ^~~~
+../src/LinkedList.c:665:2: error: expected identifier or ‘(’ before ‘return’
+  return returnAux;
+  ^~~~~~
+../src/LinkedList.c:666:1: error: expected identifier or ‘(’ before ‘}’ token
+ }*/*/
+ ^
+../src/LinkedList.c:666:3: error: unterminated comment
+ }*/*/
+   ^
+../src/LinkedList.c:666:1: error: expected identifier or ‘(’ at end of input
+ }*/*/
+ ^
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/LinkedList.o'
+make: *** [src/LinkedList.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:19:16 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/LinkedList.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.o" -o "src/LinkedList.o" "../src/LinkedList.c"
+../src/LinkedList.c: In function ‘ll_add’:
+../src/LinkedList.c:193:11: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   auxNode = addNode(this,length, pElement);
+           ^
+../src/LinkedList.c:188:8: warning: variable ‘auxNode’ set but not used [-Wunused-but-set-variable]
+  Node* auxNode;
+        ^~~~~~~
+Finished building: ../src/LinkedList.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/CachorrosParcial.o ./src/LinkedList.o   
+Finished building target: CachorrosParcial
+ 
+19:19:17 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+19:21:19 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+Finished building: ../src/Cachorros.c
+ 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c:8:29: error: unknown type name ‘FILE’
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/parser.o'
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
+                             ^~~~
+../src/parser.c:8:43: error: unknown type name ‘LinkedList’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
+                                           ^~~~~~~~~~
+../src/parser.c:44:31: error: unknown type name ‘FILE’
+ int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee)
+                               ^~~~
+../src/parser.c:44:45: error: unknown type name ‘LinkedList’
+ int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee)
+                                             ^~~~~~~~~~
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:23:41 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+Finished building: ../src/Cachorros.c
+ 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c:8:29: error: unknown type name ‘FILE’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/parser.o'
+                             ^~~~
+../src/parser.c:8:43: error: unknown type name ‘LinkedList’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
+                                           ^~~~~~~~~~
+../src/parser.c:44:31: error: unknown type name ‘FILE’
+ int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee)
+                               ^~~~
+../src/parser.c:44:45: error: unknown type name ‘LinkedList’
+ int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee)
+                                             ^~~~~~~~~~
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:24:33 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/CachorrosParcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CachorrosParcial.d" -MT"src/CachorrosParcial.o" -o "src/CachorrosParcial.o" "../src/CachorrosParcial.c"
+Finished building: ../src/CachorrosParcial.c
+ 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c:8:29: error: unknown type name ‘FILE’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
+                             ^~~~
+../src/parser.c:8:43: error: unknown type name ‘LinkedList’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
+                                           ^~~~~~~~~~
+../src/parser.c:46:31: error: unknown type name ‘FILE’
+ int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee)
+                               ^~~~
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/parser.o'
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:24:34 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c:8:29: error: unknown type name ‘FILE’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
+                             ^~~~
+../src/parser.c:8:43: error: unknown type name ‘LinkedList’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
+                                           ^~~~~~~~~~
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/parser.o'
+../src/parser.c:46:31: error: unknown type name ‘FILE’
+ int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee)
+                               ^~~~
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:25:43 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/CachorrosParcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CachorrosParcial.d" -MT"src/CachorrosParcial.o" -o "src/CachorrosParcial.o" "../src/CachorrosParcial.c"
+Finished building: ../src/CachorrosParcial.c
+ 
+Building file: ../src/LinkedList.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.o" -o "src/LinkedList.o" "../src/LinkedList.c"
+../src/LinkedList.c: In function ‘ll_add’:
+../src/LinkedList.c:193:11: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   auxNode = addNode(this,length, pElement);
+           ^
+../src/LinkedList.c:188:8: warning: variable ‘auxNode’ set but not used [-Wunused-but-set-variable]
+  Node* auxNode;
+        ^~~~~~~
+Finished building: ../src/LinkedList.c
+ 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c:8:29: error: unknown type name ‘FILE’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
+                             ^~~~
+../src/parser.c:8:43: error: unknown type name ‘LinkedList’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
+                                           ^~~~~~~~~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:50:3: error: unknown type name ‘Employee’
+   Employee* empleado;
+   ^~~~~~~~
+../src/parser.c:51:14: warning: implicit declaration of function ‘employee_new’ [-Wimplicit-function-declaration]
+   empleado = employee_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   empleado = employee_new();
+            ^
+../src/parser.c:54:30: error: ‘Employee’ undeclared (first use in this function)
+        fread(empleado,sizeof(Employee),1,pFile);
+                              ^~~~~~~~
+../src/parser.c:54:30: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/parser.o'
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:25:44 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c:8:29: error: unknown type name ‘FILE’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
+                             ^~~~
+../src/parser.c:8:43: error: unknown type name ‘LinkedList’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
+                                           ^~~~~~~~~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:50:3: error: unknown type name ‘Employee’
+   Employee* empleado;
+   ^~~~~~~~
+../src/parser.c:51:14: warning: implicit declaration of function ‘employee_new’ [-Wimplicit-function-declaration]
+   empleado = employee_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   empleado = employee_new();
+            ^
+../src/parser.c:54:30: error: ‘Employee’ undeclared (first use in this function)
+        fread(empleado,sizeof(Employee),1,pFile);
+                              ^~~~~~~~
+../src/parser.c:54:30: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/parser.o] Error 1
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/parser.o'
+"make all" terminated with exit code 2. Build might be incomplete.
+19:26:50 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c:8:29: error: unknown type name ‘FILE’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
+                             ^~~~
+../src/parser.c:8:43: error: unknown type name ‘LinkedList’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
+                                           ^~~~~~~~~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/parser.o'
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:28:24 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c:8:29: error: unknown type name ‘FILE’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pListCachorros)
+                             ^~~~
+../src/parser.c:8:43: error: unknown type name ‘LinkedList’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pListCachorros)
+                                           ^~~~~~~~~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/parser.o'
+"make all" terminated with exit code 2. Build might be incomplete.
+19:28:25 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c:8:29: error: unknown type name ‘FILE’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pListCachorros)
+                             ^~~~
+../src/parser.c:8:43: error: unknown type name ‘LinkedList’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pListCachorros)
+                                           ^~~~~~~~~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/parser.o'
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:28:36 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+In file included from ../src/parser.c:7:0:
+../src/parser.h:11:29: error: unknown type name ‘FILE’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee);
+                             ^~~~
+../src/parser.h:11:43: error: unknown type name ‘LinkedList’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee);
+                                           ^~~~~~~~~~
+../src/parser.h:12:31: error: unknown type name ‘FILE’
+ int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee);
+                               ^~~~
+../src/parser.h:12:45: error: unknown type name ‘LinkedList’
+ int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee);
+                                             ^~~~~~~~~~
+../src/parser.c:8:29: error: unknown type name ‘FILE’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pListCachorros)
+                             ^~~~
+../src/parser.c:8:43: error: unknown type name ‘LinkedList’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pListCachorros)
+                                           ^~~~~~~~~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/parser.o'
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:28:37 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+In file included from ../src/parser.c:7:0:
+../src/parser.h:11:29: error: unknown type name ‘FILE’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee);
+                             ^~~~
+../src/parser.h:11:43: error: unknown type name ‘LinkedList’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee);
+                                           ^~~~~~~~~~
+../src/parser.h:12:31: error: unknown type name ‘FILE’
+ int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee);
+                               ^~~~
+../src/parser.h:12:45: error: unknown type name ‘LinkedList’
+ int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee);
+                                             ^~~~~~~~~~
+../src/parser.c:8:29: error: unknown type name ‘FILE’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pListCachorros)
+                             ^~~~
+../src/parser.c:8:43: error: unknown type name ‘LinkedList’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pListCachorros)
+                                           ^~~~~~~~~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/parser.o'
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:29:02 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/parser.o'
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:29:03 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/parser.o'
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:29:03 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/parser.o'
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:29:05 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/parser.o'
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:29:07 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/parser.o'
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:29:59 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/CachorrosParcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CachorrosParcial.d" -MT"src/CachorrosParcial.o" -o "src/CachorrosParcial.o" "../src/CachorrosParcial.c"
+Finished building: ../src/CachorrosParcial.c
+ 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+Finished building: ../src/Controller.c
+ 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:30:00 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:31:06 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:31:07 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:31:10 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:31:11 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:31:59 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_EmployeeFromText’ [-Wimplicit-function-declaration]
+    parser_EmployeeFromText(pFile, pArrayListEmployee);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c:19:35: error: ‘pArrayListEmployee’ undeclared (first use in this function)
+    parser_EmployeeFromText(pFile, pArrayListEmployee);
+                                   ^~~~~~~~~~~~~~~~~~
+../src/Controller.c:19:35: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Controller.o'
+make: *** [src/Controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:32:04 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_EmployeeFromText’ [-Wimplicit-function-declaration]
+    parser_EmployeeFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:32:05 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:32:24 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_EmployeeFromText’ [-Wimplicit-function-declaration]
+    parser_EmployeeFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:36:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:32:25 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:32:38 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:32:39 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:33:16 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_new’:
+../src/Cachorros.c:17:9: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+  return malloc(sizeof(Cachorro));
+         ^~~~~~
+../src/Cachorros.c:17:9: warning: incompatible implicit declaration of built-in function ‘malloc’
+../src/Cachorros.c:17:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+Finished building: ../src/Cachorros.c
+ 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_EmployeeFromText’ [-Wimplicit-function-declaration]
+    parser_EmployeeFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:36:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:33:17 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:34:21 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_new’:
+../src/Cachorros.c:17:9: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+  return malloc(sizeof(Cachorro));
+         ^~~~~~
+../src/Cachorros.c:17:9: warning: incompatible implicit declaration of built-in function ‘malloc’
+../src/Cachorros.c:17:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:22:2: error: unknown type name ‘Employee’
+  Employee *retorno = NULL;
+  ^~~~~~~~
+../src/Cachorros.c:22:22: error: ‘NULL’ undeclared (first use in this function)
+  Employee *retorno = NULL;
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Cachorros.o'
+                      ^~~~
+../src/Cachorros.c:22:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/Cachorros.c:23:2: error: unknown type name ‘Employee’
+  Employee *this;
+  ^~~~~~~~
+../src/Cachorros.c:24:11: warning: implicit declaration of function ‘atoi’ [-Wimplicit-function-declaration]
+  int id = atoi(idStr);
+           ^~~~
+../src/Cachorros.c:24:16: error: ‘idStr’ undeclared (first use in this function)
+  int id = atoi(idStr);
+                ^~~~~
+../src/Cachorros.c:25:7: error: ‘nombre’ redeclared as different kind of symbol
+  char nombre[128];
+       ^~~~~~
+../src/Cachorros.c:20:58: note: previous definition of ‘nombre’ was here
+ Cachorro* cachorro_newParametros(char* id_cachorro,char* nombre,char* dias,char* reservado, char* genero)
+                                                          ^~~~~~
+../src/Cachorros.c:26:2: warning: implicit declaration of function ‘strcpy’ [-Wimplicit-function-declaration]
+  strcpy(nombre,nombreStr);
+  ^~~~~~
+../src/Cachorros.c:26:2: warning: incompatible implicit declaration of built-in function ‘strcpy’
+../src/Cachorros.c:26:2: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+../src/Cachorros.c:26:16: error: ‘nombreStr’ undeclared (first use in this function)
+  strcpy(nombre,nombreStr);
+                ^~~~~~~~~
+../src/Cachorros.c:27:29: error: ‘horasTrabajadasStr’ undeclared (first use in this function)
+  int horasTrabajadas = atoi(horasTrabajadasStr);
+                             ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:28:20: error: ‘sueldoStr’ undeclared (first use in this function)
+  int sueldo = atoi(sueldoStr);
+                    ^~~~~~~~~
+../src/Cachorros.c:29:9: warning: implicit declaration of function ‘employee_new’ [-Wimplicit-function-declaration]
+  this = employee_new();
+         ^~~~~~~~~~~~
+../src/Cachorros.c:29:7: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  this = employee_new();
+       ^
+../src/Cachorros.c:33:8: warning: implicit declaration of function ‘employee_setId’ [-Wimplicit-function-declaration]
+   if(  employee_setId(this,id) == EXIT_SUCCESS &&
+        ^~~~~~~~~~~~~~
+../src/Cachorros.c:33:35: error: ‘EXIT_SUCCESS’ undeclared (first use in this function)
+   if(  employee_setId(this,id) == EXIT_SUCCESS &&
+                                   ^~~~~~~~~~~~
+../src/Cachorros.c:34:5: warning: implicit declaration of function ‘employee_setNombre’ [-Wimplicit-function-declaration]
+     employee_setNombre(this,nombre) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:35:5: warning: implicit declaration of function ‘employee_setHorasTrabajadas’ [-Wimplicit-function-declaration]
+     employee_setHorasTrabajadas(this,horasTrabajadas) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:36:5: warning: implicit declaration of function ‘employee_setSueldo’ [-Wimplicit-function-declaration]
+     employee_setSueldo(this,sueldo) == EXIT_SUCCESS)
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:44:4: warning: implicit declaration of function ‘employee_delete’ [-Wimplicit-function-declaration]
+    employee_delete(this);
+    ^~~~~~~~~~~~~~~
+../src/Cachorros.c:48:9: warning: return from incompatible pointer type [-Wincompatible-pointer-types]
+  return retorno;
+         ^~~~~~~
+make: *** [src/Cachorros.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:34:52 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_new’:
+../src/Cachorros.c:17:9: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+  return malloc(sizeof(Cachorro));
+         ^~~~~~
+../src/Cachorros.c:17:9: warning: incompatible implicit declaration of built-in function ‘malloc’
+../src/Cachorros.c:17:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:22:22: error: ‘NULL’ undeclared (first use in this function)
+  Cachorro *retorno = NULL;
+                      ^~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Cachorros.o'
+../src/Cachorros.c:22:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/Cachorros.c:28:8: warning: implicit declaration of function ‘employee_setId’ [-Wimplicit-function-declaration]
+   if(  employee_setId(this,id) == EXIT_SUCCESS &&
+        ^~~~~~~~~~~~~~
+../src/Cachorros.c:28:28: error: ‘id’ undeclared (first use in this function)
+   if(  employee_setId(this,id) == EXIT_SUCCESS &&
+                            ^~
+../src/Cachorros.c:28:35: error: ‘EXIT_SUCCESS’ undeclared (first use in this function)
+   if(  employee_setId(this,id) == EXIT_SUCCESS &&
+                                   ^~~~~~~~~~~~
+../src/Cachorros.c:29:5: warning: implicit declaration of function ‘employee_setNombre’ [-Wimplicit-function-declaration]
+     employee_setNombre(this,nombre) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:30:5: warning: implicit declaration of function ‘employee_setHorasTrabajadas’ [-Wimplicit-function-declaration]
+     employee_setHorasTrabajadas(this,horasTrabajadas) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:30:38: error: ‘horasTrabajadas’ undeclared (first use in this function)
+     employee_setHorasTrabajadas(this,horasTrabajadas) == EXIT_SUCCESS &&
+                                      ^~~~~~~~~~~~~~~
+../src/Cachorros.c:31:5: warning: implicit declaration of function ‘employee_setSueldo’ [-Wimplicit-function-declaration]
+     employee_setSueldo(this,sueldo) == EXIT_SUCCESS)
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:31:29: error: ‘sueldo’ undeclared (first use in this function)
+     employee_setSueldo(this,sueldo) == EXIT_SUCCESS)
+                             ^~~~~~
+../src/Cachorros.c:39:4: warning: implicit declaration of function ‘employee_delete’ [-Wimplicit-function-declaration]
+    employee_delete(this);
+    ^~~~~~~~~~~~~~~
+make: *** [src/Cachorros.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:34:53 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_new’:
+../src/Cachorros.c:17:9: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+  return malloc(sizeof(Cachorro));
+         ^~~~~~
+../src/Cachorros.c:17:9: warning: incompatible implicit declaration of built-in function ‘malloc’
+../src/Cachorros.c:17:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:22:22: error: ‘NULL’ undeclared (first use in this function)
+  Cachorro *retorno = NULL;
+                      ^~~~
+../src/Cachorros.c:22:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/Cachorros.c:28:8: warning: implicit declaration of function ‘employee_setId’ [-Wimplicit-function-declaration]
+   if(  employee_setId(this,id) == EXIT_SUCCESS &&
+        ^~~~~~~~~~~~~~
+../src/Cachorros.c:28:28: error: ‘id’ undeclared (first use in this function)
+   if(  employee_setId(this,id) == EXIT_SUCCESS &&
+                            ^~
+../src/Cachorros.c:28:35: error: ‘EXIT_SUCCESS’ undeclared (first use in this function)
+   if(  employee_setId(this,id) == EXIT_SUCCESS &&
+                                   ^~~~~~~~~~~~
+../src/Cachorros.c:29:5: warning: implicit declaration of function ‘employee_setNombre’ [-Wimplicit-function-declaration]
+     employee_setNombre(this,nombre) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:30:5: warning: implicit declaration of function ‘employee_setHorasTrabajadas’ [-Wimplicit-function-declaration]
+     employee_setHorasTrabajadas(this,horasTrabajadas) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:30:38: error: ‘horasTrabajadas’ undeclared (first use in this function)
+     employee_setHorasTrabajadas(this,horasTrabajadas) == EXIT_SUCCESS &&
+                                      ^~~~~~~~~~~~~~~
+../src/Cachorros.c:31:5: warning: implicit declaration of function ‘employee_setSueldo’ [-Wimplicit-function-declaration]
+     employee_setSueldo(this,sueldo) == EXIT_SUCCESS)
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:31:29: error: ‘sueldo’ undeclared (first use in this function)
+     employee_setSueldo(this,sueldo) == EXIT_SUCCESS)
+                             ^~~~~~
+../src/Cachorros.c:39:4: warning: implicit declaration of function ‘employee_delete’ [-Wimplicit-function-declaration]
+    employee_delete(this);
+    ^~~~~~~~~~~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Cachorros.o'
+make: *** [src/Cachorros.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:35:02 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:28:8: warning: implicit declaration of function ‘employee_setId’ [-Wimplicit-function-declaration]
+   if(  employee_setId(this,id) == EXIT_SUCCESS &&
+        ^~~~~~~~~~~~~~
+../src/Cachorros.c:28:28: error: ‘id’ undeclared (first use in this function)
+   if(  employee_setId(this,id) == EXIT_SUCCESS &&
+                            ^~
+../src/Cachorros.c:28:28: note: each undeclared identifier is reported only once for each function it appears in
+../src/Cachorros.c:29:5: warning: implicit declaration of function ‘employee_setNombre’ [-Wimplicit-function-declaration]
+     employee_setNombre(this,nombre) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Cachorros.o'
+../src/Cachorros.c:30:5: warning: implicit declaration of function ‘employee_setHorasTrabajadas’ [-Wimplicit-function-declaration]
+     employee_setHorasTrabajadas(this,horasTrabajadas) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:30:38: error: ‘horasTrabajadas’ undeclared (first use in this function)
+     employee_setHorasTrabajadas(this,horasTrabajadas) == EXIT_SUCCESS &&
+                                      ^~~~~~~~~~~~~~~
+../src/Cachorros.c:31:5: warning: implicit declaration of function ‘employee_setSueldo’ [-Wimplicit-function-declaration]
+     employee_setSueldo(this,sueldo) == EXIT_SUCCESS)
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:31:29: error: ‘sueldo’ undeclared (first use in this function)
+     employee_setSueldo(this,sueldo) == EXIT_SUCCESS)
+                             ^~~~~~
+../src/Cachorros.c:39:4: warning: implicit declaration of function ‘employee_delete’ [-Wimplicit-function-declaration]
+    employee_delete(this);
+    ^~~~~~~~~~~~~~~
+make: *** [src/Cachorros.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:35:51 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:28:8: warning: implicit declaration of function ‘cachorro_setId’ [-Wimplicit-function-declaration]
+   if(  cachorro_setId(this,id_cachorro) == EXIT_SUCCESS &&
+        ^~~~~~~~~~~~~~
+../src/Cachorros.c:29:5: warning: implicit declaration of function ‘cachorro_setNombre’ [-Wimplicit-function-declaration]
+     cachorro_setNombre(this,nombre) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:30:5: warning: implicit declaration of function ‘cachorro_setHorasTrabajadas’ [-Wimplicit-function-declaration]
+     cachorro_setHorasTrabajadas(this,dias) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:31:5: warning: implicit declaration of function ‘cachorro_setSueldo’ [-Wimplicit-function-declaration]
+     cachorro_setSueldo(this,reservado) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/Cachorros.c
+ 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:35:55 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:28:8: warning: implicit declaration of function ‘cachorro_setId’ [-Wimplicit-function-declaration]
+   if(  cachorro_setId(this,id_cachorro) == EXIT_SUCCESS &&
+        ^~~~~~~~~~~~~~
+../src/Cachorros.c:29:5: warning: implicit declaration of function ‘cachorro_setNombre’ [-Wimplicit-function-declaration]
+     cachorro_setNombre(this,nombre) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:30:5: warning: implicit declaration of function ‘cachorro_setHorasTrabajadas’ [-Wimplicit-function-declaration]
+     cachorro_setHorasTrabajadas(this,dias) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:31:5: warning: implicit declaration of function ‘cachorro_setSueldo’ [-Wimplicit-function-declaration]
+     cachorro_setSueldo(this,reservado) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/Cachorros.c
+ 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+"make all" terminated with exit code 2. Build might be incomplete.
+19:35:55 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:36:45 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:28:8: warning: implicit declaration of function ‘cachorro_setId’ [-Wimplicit-function-declaration]
+   if(  cachorro_setId(this,id_cachorro) == EXIT_SUCCESS &&
+        ^~~~~~~~~~~~~~
+../src/Cachorros.c:29:5: warning: implicit declaration of function ‘cachorro_setNombre’ [-Wimplicit-function-declaration]
+     cachorro_setNombre(this,nombre) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:30:5: warning: implicit declaration of function ‘cachorro_setHorasTrabajadas’ [-Wimplicit-function-declaration]
+     cachorro_setHorasTrabajadas(this,dias) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:31:5: warning: implicit declaration of function ‘cachorro_setSueldo’ [-Wimplicit-function-declaration]
+     cachorro_setSueldo(this,reservado) == EXIT_SUCCESS &&
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Cachorros.o'
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_setId’:
+../src/Cachorros.c:53:21: error: assignment to expression with array type
+    this->id_cachorro=id_cachorro;
+                     ^
+../src/Cachorros.c: In function ‘employee_getId’:
+../src/Cachorros.c:66:15: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+   *id_cachorro=this->id_cachorro;
+               ^
+make: *** [src/Cachorros.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:36:46 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:28:8: warning: implicit declaration of function ‘cachorro_setId’ [-Wimplicit-function-declaration]
+   if(  cachorro_setId(this,id_cachorro) == EXIT_SUCCESS &&
+        ^~~~~~~~~~~~~~
+../src/Cachorros.c:29:5: warning: implicit declaration of function ‘cachorro_setNombre’ [-Wimplicit-function-declaration]
+     cachorro_setNombre(this,nombre) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:30:5: warning: implicit declaration of function ‘cachorro_setHorasTrabajadas’ [-Wimplicit-function-declaration]
+     cachorro_setHorasTrabajadas(this,dias) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:31:5: warning: implicit declaration of function ‘cachorro_setSueldo’ [-Wimplicit-function-declaration]
+     cachorro_setSueldo(this,reservado) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_setId’:
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Cachorros.o'
+../src/Cachorros.c:53:21: error: assignment to expression with array type
+    this->id_cachorro=id_cachorro;
+                     ^
+../src/Cachorros.c: In function ‘employee_getId’:
+../src/Cachorros.c:66:15: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+   *id_cachorro=this->id_cachorro;
+               ^
+make: *** [src/Cachorros.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:37:40 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:28:8: warning: implicit declaration of function ‘cachorro_setId’ [-Wimplicit-function-declaration]
+   if(  cachorro_setId(this,id_cachorro) == EXIT_SUCCESS &&
+        ^~~~~~~~~~~~~~
+../src/Cachorros.c:29:5: warning: implicit declaration of function ‘cachorro_setNombre’ [-Wimplicit-function-declaration]
+     cachorro_setNombre(this,nombre) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:30:5: warning: implicit declaration of function ‘cachorro_setHorasTrabajadas’ [-Wimplicit-function-declaration]
+     cachorro_setHorasTrabajadas(this,dias) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:31:5: warning: implicit declaration of function ‘cachorro_setSueldo’ [-Wimplicit-function-declaration]
+     cachorro_setSueldo(this,reservado) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_setId’:
+../src/Cachorros.c:53:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(this->id_cachorro,id_cachorro);
+                             ^~~~~~~~~~~
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Cachorros.c: In function ‘employee_getId’:
+../src/Cachorros.c:66:15: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+   *id_cachorro=this->id_cachorro;
+               ^
+Finished building: ../src/Cachorros.c
+ 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:37:41 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:38:02 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:28:8: warning: implicit declaration of function ‘cachorro_setId’ [-Wimplicit-function-declaration]
+   if(  cachorro_setId(this,id_cachorro) == EXIT_SUCCESS &&
+        ^~~~~~~~~~~~~~
+../src/Cachorros.c:29:5: warning: implicit declaration of function ‘cachorro_setNombre’ [-Wimplicit-function-declaration]
+     cachorro_setNombre(this,nombre) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:30:5: warning: implicit declaration of function ‘cachorro_setHorasTrabajadas’ [-Wimplicit-function-declaration]
+     cachorro_setHorasTrabajadas(this,dias) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:31:5: warning: implicit declaration of function ‘cachorro_setSueldo’ [-Wimplicit-function-declaration]
+     cachorro_setSueldo(this,reservado) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_setId’:
+../src/Cachorros.c:53:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(this->id_cachorro,id_cachorro);
+                             ^~~~~~~~~~~
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Cachorros.c: In function ‘employee_getId’:
+../src/Cachorros.c:66:10: warning: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(*id_cachorro,this->id_cachorro);
+          ^
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+Finished building: ../src/Cachorros.c
+ 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:38:03 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:38:09 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:28:8: warning: implicit declaration of function ‘cachorro_setId’ [-Wimplicit-function-declaration]
+   if(  cachorro_setId(this,id_cachorro) == EXIT_SUCCESS &&
+        ^~~~~~~~~~~~~~
+../src/Cachorros.c:29:5: warning: implicit declaration of function ‘cachorro_setNombre’ [-Wimplicit-function-declaration]
+     cachorro_setNombre(this,nombre) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:30:5: warning: implicit declaration of function ‘cachorro_setHorasTrabajadas’ [-Wimplicit-function-declaration]
+     cachorro_setHorasTrabajadas(this,dias) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:31:5: warning: implicit declaration of function ‘cachorro_setSueldo’ [-Wimplicit-function-declaration]
+     cachorro_setSueldo(this,reservado) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_setId’:
+../src/Cachorros.c:53:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(this->id_cachorro,id_cachorro);
+                             ^~~~~~~~~~~
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Cachorros.c: In function ‘cachorro_getId’:
+../src/Cachorros.c:66:10: warning: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(*id_cachorro,this->id_cachorro);
+          ^
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+Finished building: ../src/Cachorros.c
+ 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+"make all" terminated with exit code 2. Build might be incomplete.
+19:38:10 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:38:53 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:28:8: warning: implicit declaration of function ‘cachorro_setId’ [-Wimplicit-function-declaration]
+   if(  cachorro_setId(this,id_cachorro) == EXIT_SUCCESS &&
+        ^~~~~~~~~~~~~~
+../src/Cachorros.c:29:5: warning: implicit declaration of function ‘cachorro_setNombre’ [-Wimplicit-function-declaration]
+     cachorro_setNombre(this,nombre) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:30:5: warning: implicit declaration of function ‘cachorro_setHorasTrabajadas’ [-Wimplicit-function-declaration]
+     cachorro_setHorasTrabajadas(this,dias) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:31:5: warning: implicit declaration of function ‘cachorro_setSueldo’ [-Wimplicit-function-declaration]
+     cachorro_setSueldo(this,reservado) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_setId’:
+../src/Cachorros.c:53:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(this->id_cachorro,id_cachorro);
+                             ^~~~~~~~~~~
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Cachorros.c: In function ‘cachorro_getId’:
+../src/Cachorros.c:66:10: warning: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(*id_cachorro,this->id_cachorro);
+          ^
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+Finished building: ../src/Cachorros.c
+ 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:38:54 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:39:34 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:28:8: warning: implicit declaration of function ‘cachorro_setId’ [-Wimplicit-function-declaration]
+   if(  cachorro_setId(this,id_cachorro) == EXIT_SUCCESS &&
+        ^~~~~~~~~~~~~~
+../src/Cachorros.c:29:5: warning: implicit declaration of function ‘cachorro_setNombre’ [-Wimplicit-function-declaration]
+     cachorro_setNombre(this,nombre) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:30:5: warning: implicit declaration of function ‘cachorro_setHorasTrabajadas’ [-Wimplicit-function-declaration]
+     cachorro_setHorasTrabajadas(this,dias) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:31:5: warning: implicit declaration of function ‘cachorro_setSueldo’ [-Wimplicit-function-declaration]
+     cachorro_setSueldo(this,reservado) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_setId’:
+../src/Cachorros.c:53:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(this->id_cachorro,id_cachorro);
+                             ^~~~~~~~~~~
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Cachorros.c: In function ‘cachorro_getId’:
+../src/Cachorros.c:66:10: warning: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(*id_cachorro,this->id_cachorro);
+          ^
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Cachorros.o'
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Cachorros.c: In function ‘employee_getNombre’:
+../src/Cachorros.c:116:21: error: ‘nombre’ undeclared (first use in this function)
+  if(this != NULL && nombre != NULL)
+                     ^~~~~~
+../src/Cachorros.c:116:21: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/Cachorros.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:39:34 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:28:8: warning: implicit declaration of function ‘cachorro_setId’ [-Wimplicit-function-declaration]
+   if(  cachorro_setId(this,id_cachorro) == EXIT_SUCCESS &&
+        ^~~~~~~~~~~~~~
+../src/Cachorros.c:29:5: warning: implicit declaration of function ‘cachorro_setNombre’ [-Wimplicit-function-declaration]
+     cachorro_setNombre(this,nombre) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:30:5: warning: implicit declaration of function ‘cachorro_setHorasTrabajadas’ [-Wimplicit-function-declaration]
+     cachorro_setHorasTrabajadas(this,dias) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:31:5: warning: implicit declaration of function ‘cachorro_setSueldo’ [-Wimplicit-function-declaration]
+     cachorro_setSueldo(this,reservado) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_setId’:
+../src/Cachorros.c:53:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(this->id_cachorro,id_cachorro);
+                             ^~~~~~~~~~~
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Cachorros.c: In function ‘cachorro_getId’:
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Cachorros.o'
+../src/Cachorros.c:66:10: warning: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(*id_cachorro,this->id_cachorro);
+          ^
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Cachorros.c: In function ‘employee_getNombre’:
+../src/Cachorros.c:116:21: error: ‘nombre’ undeclared (first use in this function)
+  if(this != NULL && nombre != NULL)
+                     ^~~~~~
+../src/Cachorros.c:116:21: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/Cachorros.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:39:37 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:28:8: warning: implicit declaration of function ‘cachorro_setId’ [-Wimplicit-function-declaration]
+   if(  cachorro_setId(this,id_cachorro) == EXIT_SUCCESS &&
+        ^~~~~~~~~~~~~~
+../src/Cachorros.c:29:5: warning: implicit declaration of function ‘cachorro_setNombre’ [-Wimplicit-function-declaration]
+     cachorro_setNombre(this,nombre) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:30:5: warning: implicit declaration of function ‘cachorro_setHorasTrabajadas’ [-Wimplicit-function-declaration]
+     cachorro_setHorasTrabajadas(this,dias) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:31:5: warning: implicit declaration of function ‘cachorro_setSueldo’ [-Wimplicit-function-declaration]
+     cachorro_setSueldo(this,reservado) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_setId’:
+../src/Cachorros.c:53:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(this->id_cachorro,id_cachorro);
+                             ^~~~~~~~~~~
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Cachorros.c: In function ‘cachorro_getId’:
+../src/Cachorros.c:66:10: warning: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(*id_cachorro,this->id_cachorro);
+          ^
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+Finished building: ../src/Cachorros.c
+ 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:39:47 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:28:8: warning: implicit declaration of function ‘cachorro_setId’ [-Wimplicit-function-declaration]
+   if(  cachorro_setId(this,id_cachorro) == EXIT_SUCCESS &&
+        ^~~~~~~~~~~~~~
+../src/Cachorros.c:29:5: warning: implicit declaration of function ‘cachorro_setNombre’ [-Wimplicit-function-declaration]
+     cachorro_setNombre(this,nombre) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:30:5: warning: implicit declaration of function ‘cachorro_setHorasTrabajadas’ [-Wimplicit-function-declaration]
+     cachorro_setHorasTrabajadas(this,dias) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:31:5: warning: implicit declaration of function ‘cachorro_setSueldo’ [-Wimplicit-function-declaration]
+     cachorro_setSueldo(this,reservado) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_setId’:
+../src/Cachorros.c:53:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(this->id_cachorro,id_cachorro);
+                             ^~~~~~~~~~~
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Cachorros.c: In function ‘cachorro_getId’:
+../src/Cachorros.c:66:10: warning: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(*id_cachorro,this->id_cachorro);
+          ^
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Cachorros.o'
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Cachorros.c: At top level:
+../src/Cachorros.c:112:5: error: redefinition of ‘cachorro_getNombre’
+ int cachorro_getNombre(Cachorro* this,char* dias)
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:86:5: note: previous definition of ‘cachorro_getNombre’ was here
+ int cachorro_getNombre(Cachorro* this,char* nombre)
+     ^~~~~~~~~~~~~~~~~~
+make: *** [src/Cachorros.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:39:48 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:28:8: warning: implicit declaration of function ‘cachorro_setId’ [-Wimplicit-function-declaration]
+   if(  cachorro_setId(this,id_cachorro) == EXIT_SUCCESS &&
+        ^~~~~~~~~~~~~~
+../src/Cachorros.c:29:5: warning: implicit declaration of function ‘cachorro_setNombre’ [-Wimplicit-function-declaration]
+     cachorro_setNombre(this,nombre) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:30:5: warning: implicit declaration of function ‘cachorro_setHorasTrabajadas’ [-Wimplicit-function-declaration]
+     cachorro_setHorasTrabajadas(this,dias) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:31:5: warning: implicit declaration of function ‘cachorro_setSueldo’ [-Wimplicit-function-declaration]
+     cachorro_setSueldo(this,reservado) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_setId’:
+../src/Cachorros.c:53:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(this->id_cachorro,id_cachorro);
+                             ^~~~~~~~~~~
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Cachorros.o'
+/usr/include/string.h:125:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Cachorros.c: In function ‘cachorro_getId’:
+../src/Cachorros.c:66:10: warning: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(*id_cachorro,this->id_cachorro);
+          ^
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Cachorros.c: At top level:
+../src/Cachorros.c:112:5: error: redefinition of ‘cachorro_getNombre’
+ int cachorro_getNombre(Cachorro* this,char* dias)
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:86:5: note: previous definition of ‘cachorro_getNombre’ was here
+ int cachorro_getNombre(Cachorro* this,char* nombre)
+     ^~~~~~~~~~~~~~~~~~
+make: *** [src/Cachorros.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:39:55 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:28:8: warning: implicit declaration of function ‘cachorro_setId’ [-Wimplicit-function-declaration]
+   if(  cachorro_setId(this,id_cachorro) == EXIT_SUCCESS &&
+        ^~~~~~~~~~~~~~
+../src/Cachorros.c:29:5: warning: implicit declaration of function ‘cachorro_setNombre’ [-Wimplicit-function-declaration]
+     cachorro_setNombre(this,nombre) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:30:5: warning: implicit declaration of function ‘cachorro_setHorasTrabajadas’ [-Wimplicit-function-declaration]
+     cachorro_setHorasTrabajadas(this,dias) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:31:5: warning: implicit declaration of function ‘cachorro_setSueldo’ [-Wimplicit-function-declaration]
+     cachorro_setSueldo(this,reservado) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_setId’:
+../src/Cachorros.c:53:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(this->id_cachorro,id_cachorro);
+                             ^~~~~~~~~~~
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Cachorros.c: In function ‘cachorro_getId’:
+../src/Cachorros.c:66:10: warning: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(*id_cachorro,this->id_cachorro);
+          ^
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+Finished building: ../src/Cachorros.c
+ 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+"make all" terminated with exit code 2. Build might be incomplete.
+19:40:05 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+            ^
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:40:45 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:28:8: warning: implicit declaration of function ‘cachorro_setId’ [-Wimplicit-function-declaration]
+   if(  cachorro_setId(this,id_cachorro) == EXIT_SUCCESS &&
+        ^~~~~~~~~~~~~~
+../src/Cachorros.c:29:5: warning: implicit declaration of function ‘cachorro_setNombre’ [-Wimplicit-function-declaration]
+     cachorro_setNombre(this,nombre) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:30:5: warning: implicit declaration of function ‘cachorro_setHorasTrabajadas’ [-Wimplicit-function-declaration]
+     cachorro_setHorasTrabajadas(this,dias) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:31:5: warning: implicit declaration of function ‘cachorro_setSueldo’ [-Wimplicit-function-declaration]
+     cachorro_setSueldo(this,reservado) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_setId’:
+../src/Cachorros.c:53:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(this->id_cachorro,id_cachorro);
+                             ^~~~~~~~~~~
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Cachorros.c: In function ‘cachorro_getId’:
+../src/Cachorros.c:66:10: warning: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(*id_cachorro,this->id_cachorro);
+          ^
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+Finished building: ../src/Cachorros.c
+ 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:40:46 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:41:33 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:28:8: warning: implicit declaration of function ‘cachorro_setId’ [-Wimplicit-function-declaration]
+   if(  cachorro_setId(this,id_cachorro) == EXIT_SUCCESS &&
+        ^~~~~~~~~~~~~~
+../src/Cachorros.c:29:5: warning: implicit declaration of function ‘cachorro_setNombre’ [-Wimplicit-function-declaration]
+     cachorro_setNombre(this,nombre) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:30:5: warning: implicit declaration of function ‘cachorro_setHorasTrabajadas’ [-Wimplicit-function-declaration]
+     cachorro_setHorasTrabajadas(this,dias) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:31:5: warning: implicit declaration of function ‘cachorro_setSueldo’ [-Wimplicit-function-declaration]
+     cachorro_setSueldo(this,reservado) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_setId’:
+../src/Cachorros.c:53:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(this->id_cachorro,id_cachorro);
+                             ^~~~~~~~~~~
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Cachorros.c: In function ‘cachorro_getId’:
+../src/Cachorros.c:66:10: warning: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(*id_cachorro,this->id_cachorro);
+          ^
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+Finished building: ../src/Cachorros.c
+ 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+"make all" terminated with exit code 2. Build might be incomplete.
+19:41:34 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:43:09 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:28:28: warning: passing argument 2 of ‘cachorro_setId’ makes integer from pointer without a cast [-Wint-conversion]
+   if(  cachorro_setId(this,id_cachorro) == EXIT_SUCCESS &&
+                            ^~~~~~~~~~~
+In file included from ../src/Cachorros.c:8:0:
+../src/Cachorros.h:20:5: note: expected ‘int’ but argument is of type ‘char *’
+ int cachorro_setId(Cachorro* this,int id_cachorro);
+     ^~~~~~~~~~~~~~
+../src/Cachorros.c:30:5: warning: implicit declaration of function ‘cachorro_setHorasTrabajadas’ [-Wimplicit-function-declaration]
+     cachorro_setHorasTrabajadas(this,dias) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:31:5: warning: implicit declaration of function ‘cachorro_setSueldo’ [-Wimplicit-function-declaration]
+     cachorro_setSueldo(this,reservado) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_setId’:
+../src/Cachorros.c:53:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(this->id_cachorro,id_cachorro);
+                             ^~~~~~~~~~~
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Cachorros.c: In function ‘cachorro_getId’:
+../src/Cachorros.c:66:10: warning: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(*id_cachorro,this->id_cachorro);
+          ^
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+Finished building: ../src/Cachorros.c
+ 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_EmployeeFromText’ [-Wimplicit-function-declaration]
+    parser_EmployeeFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:36:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:43:19 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:43:31 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:30:5: warning: implicit declaration of function ‘cachorro_setHorasTrabajadas’ [-Wimplicit-function-declaration]
+     cachorro_setHorasTrabajadas(this,dias) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:31:5: warning: implicit declaration of function ‘cachorro_setSueldo’ [-Wimplicit-function-declaration]
+     cachorro_setSueldo(this,reservado) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c: At top level:
+../src/Cachorros.c:47:5: error: conflicting types for ‘cachorro_setId’
+ int cachorro_setId(Cachorro* this,int id_cachorro)
+     ^~~~~~~~~~~~~~
+In file included from ../src/Cachorros.c:8:0:
+../src/Cachorros.h:20:5: note: previous declaration of ‘cachorro_setId’ was here
+ int cachorro_setId(Cachorro* this,char* id_cachorro);
+     ^~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_setId’:
+../src/Cachorros.c:53:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(this->id_cachorro,id_cachorro);
+                             ^~~~~~~~~~~
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Cachorros.c: At top level:
+../src/Cachorros.c:60:5: error: conflicting types for ‘cachorro_getId’
+ int cachorro_getId(Cachorro* this,int* id_cachorro)
+     ^~~~~~~~~~~~~~
+In file included from ../src/Cachorros.c:8:0:
+../src/Cachorros.h:21:5: note: previous declaration of ‘cachorro_getId’ was here
+ int cachorro_getId(Cachorro* this,char* id_cachorro);
+     ^~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_getId’:
+../src/Cachorros.c:66:10: warning: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(*id_cachorro,this->id_cachorro);
+          ^
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+make: *** [src/Cachorros.o] Error 1
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Cachorros.o'
+"make all" terminated with exit code 2. Build might be incomplete.
+19:43:32 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:30:5: warning: implicit declaration of function ‘cachorro_setHorasTrabajadas’ [-Wimplicit-function-declaration]
+     cachorro_setHorasTrabajadas(this,dias) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:31:5: warning: implicit declaration of function ‘cachorro_setSueldo’ [-Wimplicit-function-declaration]
+     cachorro_setSueldo(this,reservado) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c: At top level:
+../src/Cachorros.c:47:5: error: conflicting types for ‘cachorro_setId’
+ int cachorro_setId(Cachorro* this,int id_cachorro)
+     ^~~~~~~~~~~~~~
+In file included from ../src/Cachorros.c:8:0:
+../src/Cachorros.h:20:5: note: previous declaration of ‘cachorro_setId’ was here
+ int cachorro_setId(Cachorro* this,char* id_cachorro);
+     ^~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_setId’:
+../src/Cachorros.c:53:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(this->id_cachorro,id_cachorro);
+                             ^~~~~~~~~~~
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Cachorros.o'
+/usr/include/string.h:125:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Cachorros.c: At top level:
+../src/Cachorros.c:60:5: error: conflicting types for ‘cachorro_getId’
+ int cachorro_getId(Cachorro* this,int* id_cachorro)
+     ^~~~~~~~~~~~~~
+In file included from ../src/Cachorros.c:8:0:
+../src/Cachorros.h:21:5: note: previous declaration of ‘cachorro_getId’ was here
+ int cachorro_getId(Cachorro* this,char* id_cachorro);
+     ^~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_getId’:
+../src/Cachorros.c:66:10: warning: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(*id_cachorro,this->id_cachorro);
+          ^
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+make: *** [src/Cachorros.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:43:51 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:30:5: warning: implicit declaration of function ‘cachorro_setHorasTrabajadas’ [-Wimplicit-function-declaration]
+     cachorro_setHorasTrabajadas(this,dias) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:31:5: warning: implicit declaration of function ‘cachorro_setSueldo’ [-Wimplicit-function-declaration]
+     cachorro_setSueldo(this,reservado) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c: At top level:
+../src/Cachorros.c:47:5: error: conflicting types for ‘cachorro_setId’
+ int cachorro_setId(Cachorro* this,int id_cachorro)
+     ^~~~~~~~~~~~~~
+In file included from ../src/Cachorros.c:8:0:
+../src/Cachorros.h:20:5: note: previous declaration of ‘cachorro_setId’ was here
+ int cachorro_setId(Cachorro* this,char* id_cachorro);
+     ^~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_setId’:
+../src/Cachorros.c:53:29: warning: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strcpy(this->id_cachorro,id_cachorro);
+                             ^~~~~~~~~~~
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Cachorros.o'
+/usr/include/string.h:125:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Cachorros.c: At top level:
+../src/Cachorros.c:60:5: error: conflicting types for ‘cachorro_getId’
+ int cachorro_getId(Cachorro* this,int* id_cachorro)
+     ^~~~~~~~~~~~~~
+In file included from ../src/Cachorros.c:8:0:
+../src/Cachorros.h:21:5: note: previous declaration of ‘cachorro_getId’ was here
+ int cachorro_getId(Cachorro* this,char* id_cachorro);
+     ^~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_getId’:
+../src/Cachorros.c:66:10: warning: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(*id_cachorro,this->id_cachorro);
+          ^
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘int’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+make: *** [src/Cachorros.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:44:07 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:30:5: warning: implicit declaration of function ‘cachorro_setHorasTrabajadas’ [-Wimplicit-function-declaration]
+     cachorro_setHorasTrabajadas(this,dias) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Cachorros.c:31:5: warning: implicit declaration of function ‘cachorro_setSueldo’ [-Wimplicit-function-declaration]
+     cachorro_setSueldo(this,reservado) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_getId’:
+../src/Cachorros.c:66:10: warning: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(*id_cachorro,this->id_cachorro);
+          ^
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+Finished building: ../src/Cachorros.c
+ 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_EmployeeFromText’ [-Wimplicit-function-declaration]
+    parser_EmployeeFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:36:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:44:08 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:44:13 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+"make all" terminated with exit code 2. Build might be incomplete.
+19:44:14 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:22:7: error: unknown type name ‘Cachorro’
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+       ^~~~~~~~
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:21:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:11:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:51:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+              ^~~~~~~~~~~~
+../src/parser.c:51:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:44:33 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c:9:22: fatal error: Cachorro.h: No existe el fichero o el directorio
+ #include "Cachorro.h"
+                      ^
+compilation terminated.
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+make: *** [src/parser.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:44:35 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c:9:22: fatal error: Cachorro.h: No existe el fichero o el directorio
+ #include "Cachorro.h"
+                      ^
+compilation terminated.
+make: *** [src/parser.o] Error 1
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/parser.o'
+"make all" terminated with exit code 2. Build might be incomplete.
+19:44:43 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_EmployeeFromText’:
+../src/parser.c:25:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:25:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:24:10: warning: unused variable ‘id’ [-Wunused-variable]
+      int id = atoi(var1);
+          ^~
+../src/parser.c:14:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:54:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:54:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+Finished building: ../src/parser.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+./src/Cachorros.o: En la función `cachorro_newParametros':
+/home/alumno/parcial2cortes/CachorrosParcial/Debug/../src/Cachorros.c:30: referencia a `cachorro_setHorasTrabajadas' sin definir
+/home/alumno/parcial2cortes/CachorrosParcial/Debug/../src/Cachorros.c:31: referencia a `cachorro_setSueldo' sin definir
+/home/alumno/parcial2cortes/CachorrosParcial/Debug/../src/Cachorros.c:32: referencia a `cachorro_setSueldo' sin definir
+makefile:30: fallo en las instrucciones para el objetivo 'CachorrosParcial'
+collect2: error: ld returned 1 exit status
+make: *** [CachorrosParcial] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:44:44 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+./src/Cachorros.o: En la función `cachorro_newParametros':
+/home/alumno/parcial2cortes/CachorrosParcial/Debug/../src/Cachorros.c:30: referencia a `cachorro_setHorasTrabajadas' sin definir
+makefile:30: fallo en las instrucciones para el objetivo 'CachorrosParcial'
+/home/alumno/parcial2cortes/CachorrosParcial/Debug/../src/Cachorros.c:31: referencia a `cachorro_setSueldo' sin definir
+/home/alumno/parcial2cortes/CachorrosParcial/Debug/../src/Cachorros.c:32: referencia a `cachorro_setSueldo' sin definir
+collect2: error: ld returned 1 exit status
+make: *** [CachorrosParcial] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.

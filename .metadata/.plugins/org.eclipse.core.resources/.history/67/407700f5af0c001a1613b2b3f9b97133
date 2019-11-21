@@ -1,0 +1,123 @@
+/*
+ * Cachorros.c
+ *
+ *  Created on: 21 nov. 2019
+ *      Author: alumno
+ */
+
+#include "Cachorros.h"
+#include "LinkedList.h"
+void cachorro_delete()
+{
+	void free(void*);
+}
+
+Cachorro* cachorro_new()
+{
+	return malloc(sizeof(Cachorro));
+}
+
+Cachorro* cachorro_newParametros(char* id_cachorro,char* nombre,char* dias,char* reservado, char* genero)
+{
+	Cachorro *retorno = NULL;
+	Cachorro *this;
+	this = cachorro_new();
+
+	if(this != NULL)
+	{
+		if(		cachorro_setId(this,id_cachorro) == EXIT_SUCCESS &&
+				cachorro_setNombre(this,nombre) == EXIT_SUCCESS &&
+				cachorro_setHorasTrabajadas(this,dias) == EXIT_SUCCESS &&
+				cachorro_setSueldo(this,reservado) == EXIT_SUCCESS &&
+				cachorro_setSueldo(this,genero) == EXIT_SUCCESS)
+		{
+
+				retorno = this;
+		}
+		else
+		{
+
+			cachorro_delete(this);
+		}
+	}
+	return retorno;
+
+}
+
+int cachorro_setId(Cachorro* this,int id_cachorro)
+{
+	int retorno = EXIT_FAILURE;
+
+		if(this != NULL)
+		{
+			strcpy(this->id_cachorro,id_cachorro);
+			retorno = EXIT_SUCCESS;
+		}
+
+		return retorno;
+}
+
+int cachorro_getId(Cachorro* this,int* id_cachorro)
+{
+	int retorno = EXIT_FAILURE;
+
+	if(this != NULL && id_cachorro != NULL)
+	{
+		strcpy(*id_cachorro,this->id_cachorro);
+		retorno = EXIT_SUCCESS;
+	}
+
+	return retorno;
+}
+
+int cachorro_setNombre(Cachorro* this,char* nombre)
+{
+	int retorno = EXIT_FAILURE;
+
+	if(this != NULL)
+	{
+		strcpy(this->nombre,nombre);
+		retorno = EXIT_SUCCESS;
+	}
+
+	return retorno;
+}
+
+int cachorro_getNombre(Cachorro* this,char* nombre)
+{
+	int retorno = EXIT_FAILURE;
+
+	if(this != NULL && nombre != NULL)
+	{
+		strcpy(nombre,this->nombre);
+		retorno = EXIT_SUCCESS;
+	}
+
+	return retorno;
+}
+
+int cachorro_setDias(Cachorro* this,char* dias)
+{
+	int retorno = EXIT_FAILURE;
+
+	if(this != NULL)
+	{
+		strcpy(this->dias,dias);
+		retorno = EXIT_SUCCESS;
+	}
+
+	return retorno;
+}
+
+int cachorro_getDias(Cachorro* this,char* dias)
+{
+	int retorno = EXIT_FAILURE;
+
+	if(this != NULL && dias != NULL)
+	{
+		strcpy(dias,this->dias);
+		retorno = EXIT_SUCCESS;
+	}
+
+	return retorno;
+}

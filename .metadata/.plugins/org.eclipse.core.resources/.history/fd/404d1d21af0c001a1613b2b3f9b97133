@@ -1,0 +1,50 @@
+/*
+ * Cachorros.c
+ *
+ *  Created on: 21 nov. 2019
+ *      Author: alumno
+ */
+
+#include "Cachorros.h"
+
+void cachorro_delete()
+{
+	void free(void*);
+}
+
+Cachorro* cachorro_new()
+{
+	return malloc(sizeof(Cachorro));
+}
+
+Cachorro* cachorro_newParametros(char* id_cachorro,char* nombre,char* dias,char* reservado, char* genero)
+{
+	Employee *retorno = NULL;
+	Employee *this;
+	int id = atoi(idStr);
+	char nombre[128];
+	strcpy(nombre,nombreStr);
+	int horasTrabajadas = atoi(horasTrabajadasStr);
+	int sueldo = atoi(sueldoStr);
+	this = employee_new();
+
+	if(this != NULL)
+	{
+		if(		employee_setId(this,id) == EXIT_SUCCESS &&
+				employee_setNombre(this,nombre) == EXIT_SUCCESS &&
+				employee_setHorasTrabajadas(this,horasTrabajadas) == EXIT_SUCCESS &&
+				employee_setSueldo(this,sueldo) == EXIT_SUCCESS)
+		{
+
+				retorno = this;
+		}
+		else
+		{
+
+			employee_delete(this);
+		}
+	}
+
+	return retorno;
+
+}

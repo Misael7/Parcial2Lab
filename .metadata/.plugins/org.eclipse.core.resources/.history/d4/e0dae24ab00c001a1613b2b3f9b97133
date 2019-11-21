@@ -1,0 +1,25 @@
+/*
+ * Cachorros.h
+ *
+ *  Created on: 21 nov. 2019
+ *      Author: alumno
+ */
+
+#ifndef CACHORROS_H_
+#define CACHORROS_H_
+
+typedef struct
+{
+	char id_cachorro[50];
+	char nombre[50];
+	char dias[50];
+	char reservado[50];
+	char genero[50];
+}Cachorro;
+
+int cachorro_setId(Cachorro* this,int id_cachorro);
+int cachorro_getId(Cachorro* this,int* id_cachorro);
+int cachorro_setNombre(Cachorro* this,char* nombre);
+
+
+#endif /* CACHORROS_H_ */
