@@ -17,22 +17,20 @@ int main(void)
     int option = 0;
     LinkedList* listaEmpleados = ll_newLinkedList();
     do{
-       	printf("\n1. Cargar los datos de los cachorros desde el archivo data.csv (modo texto).\n");
-       	printf("2. Cargar los datos de los cachorros desde el archivo data.csv (modo binario).\n");       ;
+       	printf("\n1. Cargar los datos de los empleados desde el archivo data.csv (modo texto).\n");
+       	printf("2. Cargar los datos de los empleados desde el archivo data.csv (modo binario).\n");       ;
        	printf("10. EXIT.\n");
        	FLUSH;
        	scanf("%d",&option);
            switch(option)
            {
                case 1:
-                   controller_loadFromText("cachorros.csv",listaEmpleados);
+                   controller_loadFromText("data.csv",listaEmpleados);
                    break;
 
                case 2:
-               	controller_loadFromBinary("cachorros.bin",listaEmpleados);
+               	controller_loadFromBinary("data.bin",listaEmpleados);
                	break;
-
-
 
 
            }

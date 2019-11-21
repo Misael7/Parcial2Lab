@@ -3098,3 +3098,832 @@ makefile:30: fallo en las instrucciones para el objetivo 'CachorrosParcial'
 collect2: error: ld returned 1 exit status
 make: *** [CachorrosParcial] Error 1
 "make all" terminated with exit code 2. Build might be incomplete.
+19:47:29 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:31:5: warning: implicit declaration of function ‘cachorro_setSueldo’ [-Wimplicit-function-declaration]
+     cachorro_setSueldo(this,reservado) == EXIT_SUCCESS &&
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_getId’:
+../src/Cachorros.c:66:10: warning: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(*id_cachorro,this->id_cachorro);
+          ^
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+Finished building: ../src/Cachorros.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+./src/Cachorros.o: En la función `cachorro_newParametros':
+/home/alumno/parcial2cortes/CachorrosParcial/Debug/../src/Cachorros.c:31: referencia a `cachorro_setSueldo' sin definir
+/home/alumno/parcial2cortes/CachorrosParcial/Debug/../src/Cachorros.c:32: referencia a `cachorro_setSueldo' sin definir
+collect2: error: ld returned 1 exit status
+makefile:30: fallo en las instrucciones para el objetivo 'CachorrosParcial'
+make: *** [CachorrosParcial] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:47:50 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:31:44: error: expected expression before ‘==’ token
+     cachorro_setReservado(this,reservado)) == EXIT_SUCCESS &&
+                                            ^~
+../src/Cachorros.c:32:52: error: expected statement before ‘)’ token
+     cachorro_setSueldo(this,genero) == EXIT_SUCCESS)
+                                                    ^
+../src/Cachorros.c:37:3: error: expected ‘}’ before ‘else’
+   else
+   ^~~~
+../src/Cachorros.c:22:12: warning: variable ‘retorno’ set but not used [-Wunused-but-set-variable]
+  Cachorro *retorno = NULL;
+            ^~~~~~~
+../src/Cachorros.c: At top level:
+../src/Cachorros.c:43:2: error: expected identifier or ‘(’ before ‘return’
+  return retorno;
+  ^~~~~~
+../src/Cachorros.c:45:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+../src/Cachorros.c: In function ‘cachorro_getId’:
+../src/Cachorros.c:66:10: warning: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(*id_cachorro,this->id_cachorro);
+          ^
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Cachorros.o'
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:42:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+make: *** [src/Cachorros.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:47:52 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:31:44: error: expected expression before ‘==’ token
+     cachorro_setReservado(this,reservado)) == EXIT_SUCCESS &&
+                                            ^~
+../src/Cachorros.c:32:52: error: expected statement before ‘)’ token
+     cachorro_setSueldo(this,genero) == EXIT_SUCCESS)
+                                                    ^
+../src/Cachorros.c:37:3: error: expected ‘}’ before ‘else’
+   else
+   ^~~~
+../src/Cachorros.c:22:12: warning: variable ‘retorno’ set but not used [-Wunused-but-set-variable]
+  Cachorro *retorno = NULL;
+            ^~~~~~~
+../src/Cachorros.c: At top level:
+../src/Cachorros.c:43:2: error: expected identifier or ‘(’ before ‘return’
+  return retorno;
+  ^~~~~~
+../src/Cachorros.c:45:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+../src/Cachorros.c: In function ‘cachorro_getId’:
+../src/Cachorros.c:66:10: warning: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(*id_cachorro,this->id_cachorro);
+          ^
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:42:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Cachorros.o'
+make: *** [src/Cachorros.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:47:57 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:32:5: warning: implicit declaration of function ‘cachorro_setSueldo’ [-Wimplicit-function-declaration]
+     cachorro_setSueldo(this,genero) == EXIT_SUCCESS)
+     ^~~~~~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_getId’:
+../src/Cachorros.c:66:10: warning: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(*id_cachorro,this->id_cachorro);
+          ^
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+Finished building: ../src/Cachorros.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+./src/Cachorros.o: En la función `cachorro_newParametros':
+/home/alumno/parcial2cortes/CachorrosParcial/Debug/../src/Cachorros.c:32: referencia a `cachorro_setSueldo' sin definir
+collect2: error: ld returned 1 exit status
+makefile:30: fallo en las instrucciones para el objetivo 'CachorrosParcial'
+make: *** [CachorrosParcial] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:48:14 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_getId’:
+../src/Cachorros.c:66:10: warning: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(*id_cachorro,this->id_cachorro);
+          ^
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+Finished building: ../src/Cachorros.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+19:48:15 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+19:50:04 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/CachorrosParcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CachorrosParcial.d" -MT"src/CachorrosParcial.o" -o "src/CachorrosParcial.o" "../src/CachorrosParcial.c"
+../src/CachorrosParcial.c: In function ‘main’:
+../src/CachorrosParcial.c:14:15: warning: implicit declaration of function ‘__fpurge’ [-Wimplicit-function-declaration]
+ #define FLUSH __fpurge(stdin);
+               ^
+../src/CachorrosParcial.c:23:9: note: in expansion of macro ‘FLUSH’
+         FLUSH;
+         ^~~~~
+../src/CachorrosParcial.c:28:20: warning: implicit declaration of function ‘controller_loadFromText’ [-Wimplicit-function-declaration]
+                    controller_loadFromText("data.csv",listaEmpleados);
+                    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/CachorrosParcial.c:32:17: warning: implicit declaration of function ‘controller_loadFromBinary’ [-Wimplicit-function-declaration]
+                 controller_loadFromBinary("data.bin",listaEmpleados);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/CachorrosParcial.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+19:50:04 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+19:50:12 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/CachorrosParcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CachorrosParcial.d" -MT"src/CachorrosParcial.o" -o "src/CachorrosParcial.o" "../src/CachorrosParcial.c"
+../src/CachorrosParcial.c: In function ‘main’:
+../src/CachorrosParcial.c:14:15: warning: implicit declaration of function ‘__fpurge’ [-Wimplicit-function-declaration]
+ #define FLUSH __fpurge(stdin);
+               ^
+../src/CachorrosParcial.c:23:9: note: in expansion of macro ‘FLUSH’
+         FLUSH;
+         ^~~~~
+../src/CachorrosParcial.c:28:20: warning: implicit declaration of function ‘controller_loadFromText’ [-Wimplicit-function-declaration]
+                    controller_loadFromText("data.csv",listaEmpleados);
+                    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/CachorrosParcial.c:32:17: warning: implicit declaration of function ‘controller_loadFromBinary’ [-Wimplicit-function-declaration]
+                 controller_loadFromBinary("data.bin",listaEmpleados);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/CachorrosParcial.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+19:50:13 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+19:50:20 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+19:50:46 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/CachorrosParcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CachorrosParcial.d" -MT"src/CachorrosParcial.o" -o "src/CachorrosParcial.o" "../src/CachorrosParcial.c"
+../src/CachorrosParcial.c: In function ‘main’:
+../src/CachorrosParcial.c:14:15: warning: implicit declaration of function ‘__fpurge’ [-Wimplicit-function-declaration]
+ #define FLUSH __fpurge(stdin);
+               ^
+../src/CachorrosParcial.c:23:9: note: in expansion of macro ‘FLUSH’
+         FLUSH;
+         ^~~~~
+../src/CachorrosParcial.c:28:20: warning: implicit declaration of function ‘controller_loadFromText’ [-Wimplicit-function-declaration]
+                    controller_loadFromText("cachorros.csv",listaEmpleados);
+                    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/CachorrosParcial.c:32:17: warning: implicit declaration of function ‘controller_loadFromBinary’ [-Wimplicit-function-declaration]
+                 controller_loadFromBinary("cachorros.bin",listaEmpleados);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/CachorrosParcial.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+19:50:47 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+19:51:49 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_EmployeeFromText’ [-Wimplicit-function-declaration]
+    parser_EmployeeFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:36:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_ListCachorro’:
+../src/Controller.c:49:27: error: ‘pArrayListEmployee’ undeclared (first use in this function)
+  for(int i =0 ; i <ll_len(pArrayListEmployee); i++)
+                           ^~~~~~~~~~~~~~~~~~
+../src/Controller.c:49:27: note: each undeclared identifier is reported only once for each function it appears in
+../src/Controller.c:51:2: error: unknown type name ‘Employee’
+  Employee* empleado;
+  ^~~~~~~~
+../src/Controller.c:54:2: warning: implicit declaration of function ‘employee_getId’ [-Wimplicit-function-declaration]
+  employee_getId(empleado,&id);
+  ^~~~~~~~~~~~~~
+../src/Controller.c:55:2: warning: implicit declaration of function ‘employee_getNombre’ [-Wimplicit-function-declaration]
+  employee_getNombre(empleado,nombre);
+  ^~~~~~~~~~~~~~~~~~
+../src/Controller.c:56:2: warning: implicit declaration of function ‘employee_getHorasTrabajadas’ [-Wimplicit-function-declaration]
+  employee_getHorasTrabajadas(empleado,&horasTrabajadas);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c:57:2: warning: implicit declaration of function ‘employee_getSueldo’ [-Wimplicit-function-declaration]
+  employee_getSueldo(empleado,&sueldo);
+  ^~~~~~~~~~~~~~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Controller.o'
+make: *** [src/Controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:51:50 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_EmployeeFromText’ [-Wimplicit-function-declaration]
+    parser_EmployeeFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:36:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_ListCachorro’:
+../src/Controller.c:49:27: error: ‘pArrayListEmployee’ undeclared (first use in this function)
+  for(int i =0 ; i <ll_len(pArrayListEmployee); i++)
+                           ^~~~~~~~~~~~~~~~~~
+../src/Controller.c:49:27: note: each undeclared identifier is reported only once for each function it appears in
+../src/Controller.c:51:2: error: unknown type name ‘Employee’
+  Employee* empleado;
+  ^~~~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Controller.o'
+../src/Controller.c:54:2: warning: implicit declaration of function ‘employee_getId’ [-Wimplicit-function-declaration]
+  employee_getId(empleado,&id);
+  ^~~~~~~~~~~~~~
+../src/Controller.c:55:2: warning: implicit declaration of function ‘employee_getNombre’ [-Wimplicit-function-declaration]
+  employee_getNombre(empleado,nombre);
+  ^~~~~~~~~~~~~~~~~~
+../src/Controller.c:56:2: warning: implicit declaration of function ‘employee_getHorasTrabajadas’ [-Wimplicit-function-declaration]
+  employee_getHorasTrabajadas(empleado,&horasTrabajadas);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c:57:2: warning: implicit declaration of function ‘employee_getSueldo’ [-Wimplicit-function-declaration]
+  employee_getSueldo(empleado,&sueldo);
+  ^~~~~~~~~~~~~~~~~~
+make: *** [src/Controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:52:20 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_EmployeeFromText’ [-Wimplicit-function-declaration]
+    parser_EmployeeFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:36:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_ListCachorro’:
+../src/Controller.c:51:2: warning: implicit declaration of function ‘employee_getId’ [-Wimplicit-function-declaration]
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Controller.o'
+  employee_getId(empleado,&id);
+  ^~~~~~~~~~~~~~
+../src/Controller.c:51:17: error: ‘empleado’ undeclared (first use in this function)
+  employee_getId(empleado,&id);
+                 ^~~~~~~~
+../src/Controller.c:51:17: note: each undeclared identifier is reported only once for each function it appears in
+../src/Controller.c:51:27: error: ‘id’ undeclared (first use in this function)
+  employee_getId(empleado,&id);
+                           ^~
+../src/Controller.c:52:2: warning: implicit declaration of function ‘employee_getNombre’ [-Wimplicit-function-declaration]
+  employee_getNombre(empleado,nombre);
+  ^~~~~~~~~~~~~~~~~~
+../src/Controller.c:52:30: error: ‘nombre’ undeclared (first use in this function)
+  employee_getNombre(empleado,nombre);
+                              ^~~~~~
+../src/Controller.c:53:2: warning: implicit declaration of function ‘employee_getHorasTrabajadas’ [-Wimplicit-function-declaration]
+  employee_getHorasTrabajadas(empleado,&horasTrabajadas);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c:53:40: error: ‘horasTrabajadas’ undeclared (first use in this function)
+  employee_getHorasTrabajadas(empleado,&horasTrabajadas);
+                                        ^~~~~~~~~~~~~~~
+../src/Controller.c:54:2: warning: implicit declaration of function ‘employee_getSueldo’ [-Wimplicit-function-declaration]
+  employee_getSueldo(empleado,&sueldo);
+  ^~~~~~~~~~~~~~~~~~
+../src/Controller.c:54:31: error: ‘sueldo’ undeclared (first use in this function)
+  employee_getSueldo(empleado,&sueldo);
+                               ^~~~~~
+../src/Controller.c:48:12: warning: variable ‘cachorro’ set but not used [-Wunused-but-set-variable]
+  Cachorro* cachorro;
+            ^~~~~~~~
+make: *** [src/Controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:52:21 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_EmployeeFromText’ [-Wimplicit-function-declaration]
+    parser_EmployeeFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:36:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_ListCachorro’:
+../src/Controller.c:51:2: warning: implicit declaration of function ‘employee_getId’ [-Wimplicit-function-declaration]
+  employee_getId(empleado,&id);
+  ^~~~~~~~~~~~~~
+../src/Controller.c:51:17: error: ‘empleado’ undeclared (first use in this function)
+  employee_getId(empleado,&id);
+                 ^~~~~~~~
+../src/Controller.c:51:17: note: each undeclared identifier is reported only once for each function it appears in
+../src/Controller.c:51:27: error: ‘id’ undeclared (first use in this function)
+  employee_getId(empleado,&id);
+                           ^~
+../src/Controller.c:52:2: warning: implicit declaration of function ‘employee_getNombre’ [-Wimplicit-function-declaration]
+  employee_getNombre(empleado,nombre);
+  ^~~~~~~~~~~~~~~~~~
+../src/Controller.c:52:30: error: ‘nombre’ undeclared (first use in this function)
+  employee_getNombre(empleado,nombre);
+                              ^~~~~~
+../src/Controller.c:53:2: warning: implicit declaration of function ‘employee_getHorasTrabajadas’ [-Wimplicit-function-declaration]
+  employee_getHorasTrabajadas(empleado,&horasTrabajadas);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Controller.o'
+../src/Controller.c:53:40: error: ‘horasTrabajadas’ undeclared (first use in this function)
+  employee_getHorasTrabajadas(empleado,&horasTrabajadas);
+                                        ^~~~~~~~~~~~~~~
+../src/Controller.c:54:2: warning: implicit declaration of function ‘employee_getSueldo’ [-Wimplicit-function-declaration]
+  employee_getSueldo(empleado,&sueldo);
+  ^~~~~~~~~~~~~~~~~~
+../src/Controller.c:54:31: error: ‘sueldo’ undeclared (first use in this function)
+  employee_getSueldo(empleado,&sueldo);
+                               ^~~~~~
+../src/Controller.c:48:12: warning: variable ‘cachorro’ set but not used [-Wunused-but-set-variable]
+  Cachorro* cachorro;
+            ^~~~~~~~
+make: *** [src/Controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:53:15 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_EmployeeFromText’ [-Wimplicit-function-declaration]
+    parser_EmployeeFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:36:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_ListCachorro’:
+../src/Controller.c:51:26: error: ‘id_cachorro’ undeclared (first use in this function)
+  cachorro_getId(cachorro,id_cachorro);
+                          ^~~~~~~~~~~
+../src/Controller.c:51:26: note: each undeclared identifier is reported only once for each function it appears in
+../src/Controller.c:52:2: warning: implicit declaration of function ‘employee_getNombre’ [-Wimplicit-function-declaration]
+  employee_getNombre(empleado,nombre);
+  ^~~~~~~~~~~~~~~~~~
+../src/Controller.c:52:21: error: ‘empleado’ undeclared (first use in this function)
+  employee_getNombre(empleado,nombre);
+                     ^~~~~~~~
+../src/Controller.c:52:30: error: ‘nombre’ undeclared (first use in this function)
+  employee_getNombre(empleado,nombre);
+                              ^~~~~~
+../src/Controller.c:53:2: warning: implicit declaration of function ‘employee_getHorasTrabajadas’ [-Wimplicit-function-declaration]
+  employee_getHorasTrabajadas(empleado,&horasTrabajadas);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c:53:40: error: ‘horasTrabajadas’ undeclared (first use in this function)
+  employee_getHorasTrabajadas(empleado,&horasTrabajadas);
+                                        ^~~~~~~~~~~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Controller.o'
+../src/Controller.c:54:2: warning: implicit declaration of function ‘employee_getSueldo’ [-Wimplicit-function-declaration]
+  employee_getSueldo(empleado,&sueldo);
+  ^~~~~~~~~~~~~~~~~~
+../src/Controller.c:54:31: error: ‘sueldo’ undeclared (first use in this function)
+  employee_getSueldo(empleado,&sueldo);
+                               ^~~~~~
+../src/Controller.c:57:4: error: ‘id’ undeclared (first use in this function)
+    id, nombre , horasTrabajadas , sueldo);
+    ^~
+make: *** [src/Controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:53:16 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_EmployeeFromText’ [-Wimplicit-function-declaration]
+    parser_EmployeeFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:36:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_ListCachorro’:
+../src/Controller.c:51:26: error: ‘id_cachorro’ undeclared (first use in this function)
+  cachorro_getId(cachorro,id_cachorro);
+                          ^~~~~~~~~~~
+../src/Controller.c:51:26: note: each undeclared identifier is reported only once for each function it appears in
+../src/Controller.c:52:2: warning: implicit declaration of function ‘employee_getNombre’ [-Wimplicit-function-declaration]
+  employee_getNombre(empleado,nombre);
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Controller.o'
+  ^~~~~~~~~~~~~~~~~~
+../src/Controller.c:52:21: error: ‘empleado’ undeclared (first use in this function)
+  employee_getNombre(empleado,nombre);
+                     ^~~~~~~~
+../src/Controller.c:52:30: error: ‘nombre’ undeclared (first use in this function)
+  employee_getNombre(empleado,nombre);
+                              ^~~~~~
+../src/Controller.c:53:2: warning: implicit declaration of function ‘employee_getHorasTrabajadas’ [-Wimplicit-function-declaration]
+  employee_getHorasTrabajadas(empleado,&horasTrabajadas);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c:53:40: error: ‘horasTrabajadas’ undeclared (first use in this function)
+  employee_getHorasTrabajadas(empleado,&horasTrabajadas);
+                                        ^~~~~~~~~~~~~~~
+../src/Controller.c:54:2: warning: implicit declaration of function ‘employee_getSueldo’ [-Wimplicit-function-declaration]
+  employee_getSueldo(empleado,&sueldo);
+  ^~~~~~~~~~~~~~~~~~
+../src/Controller.c:54:31: error: ‘sueldo’ undeclared (first use in this function)
+  employee_getSueldo(empleado,&sueldo);
+                               ^~~~~~
+../src/Controller.c:57:4: error: ‘id’ undeclared (first use in this function)
+    id, nombre , horasTrabajadas , sueldo);
+    ^~
+make: *** [src/Controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:54:02 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_EmployeeFromText’ [-Wimplicit-function-declaration]
+    parser_EmployeeFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:36:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_ListCachorro’:
+../src/Controller.c:51:26: error: ‘id_cachorro’ undeclared (first use in this function)
+  cachorro_getId(cachorro,id_cachorro);
+                          ^~~~~~~~~~~
+../src/Controller.c:51:26: note: each undeclared identifier is reported only once for each function it appears in
+../src/Controller.c:52:30: error: ‘nombre’ undeclared (first use in this function)
+  cachorro_getNombre(cachorro,nombre);
+                              ^~~~~~
+../src/Controller.c:53:2: warning: implicit declaration of function ‘employee_getHorasTrabajadas’ [-Wimplicit-function-declaration]
+  employee_getHorasTrabajadas(empleado,&horasTrabajadas);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c:53:30: error: ‘empleado’ undeclared (first use in this function)
+  employee_getHorasTrabajadas(empleado,&horasTrabajadas);
+                              ^~~~~~~~
+../src/Controller.c:53:40: error: ‘horasTrabajadas’ undeclared (first use in this function)
+  employee_getHorasTrabajadas(empleado,&horasTrabajadas);
+                                        ^~~~~~~~~~~~~~~
+../src/Controller.c:54:2: warning: implicit declaration of function ‘employee_getSueldo’ [-Wimplicit-function-declaration]
+  employee_getSueldo(empleado,&sueldo);
+  ^~~~~~~~~~~~~~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Controller.o'
+../src/Controller.c:54:31: error: ‘sueldo’ undeclared (first use in this function)
+  employee_getSueldo(empleado,&sueldo);
+                               ^~~~~~
+../src/Controller.c:57:4: error: ‘id’ undeclared (first use in this function)
+    id, nombre , horasTrabajadas , sueldo);
+    ^~
+make: *** [src/Controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:54:20 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_EmployeeFromText’ [-Wimplicit-function-declaration]
+    parser_EmployeeFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:36:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_ListCachorro’:
+../src/Controller.c:51:26: error: ‘id_cachorro’ undeclared (first use in this function)
+  cachorro_getId(cachorro,id_cachorro);
+                          ^~~~~~~~~~~
+../src/Controller.c:51:26: note: each undeclared identifier is reported only once for each function it appears in
+../src/Controller.c:52:30: error: ‘nombre’ undeclared (first use in this function)
+  cachorro_getNombre(cachorro,nombre);
+                              ^~~~~~
+../src/Controller.c:53:29: error: ‘dias’ undeclared (first use in this function)
+  cachorro_getDias(cachorro, dias);
+                             ^~~~
+../src/Controller.c:54:2: warning: implicit declaration of function ‘employee_getSueldo’ [-Wimplicit-function-declaration]
+  employee_getSueldo(empleado,&sueldo);
+  ^~~~~~~~~~~~~~~~~~
+../src/Controller.c:54:21: error: ‘empleado’ undeclared (first use in this function)
+  employee_getSueldo(empleado,&sueldo);
+                     ^~~~~~~~
+../src/Controller.c:54:31: error: ‘sueldo’ undeclared (first use in this function)
+  employee_getSueldo(empleado,&sueldo);
+                               ^~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Controller.o'
+../src/Controller.c:57:4: error: ‘id’ undeclared (first use in this function)
+    id, nombre , horasTrabajadas , sueldo);
+    ^~
+../src/Controller.c:57:17: error: ‘horasTrabajadas’ undeclared (first use in this function)
+    id, nombre , horasTrabajadas , sueldo);
+                 ^~~~~~~~~~~~~~~
+make: *** [src/Controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:54:49 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_EmployeeFromText’ [-Wimplicit-function-declaration]
+    parser_EmployeeFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:36:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_ListCachorro’:
+../src/Controller.c:51:26: error: ‘id_cachorro’ undeclared (first use in this function)
+  cachorro_getId(cachorro,id_cachorro);
+                          ^~~~~~~~~~~
+../src/Controller.c:51:26: note: each undeclared identifier is reported only once for each function it appears in
+../src/Controller.c:52:30: error: ‘nombre’ undeclared (first use in this function)
+  cachorro_getNombre(cachorro,nombre);
+                              ^~~~~~
+../src/Controller.c:53:29: error: ‘dias’ undeclared (first use in this function)
+  cachorro_getDias(cachorro, dias);
+                             ^~~~
+../src/Controller.c:54:33: error: ‘reservado’ undeclared (first use in this function)
+  cachorro_getReservado(cachorro,reservado);
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Controller.o'
+                                 ^~~~~~~~~
+../src/Controller.c:55:30: error: ‘genero’ undeclared (first use in this function)
+  cachorro_getGenero(cachorro,genero);
+                              ^~~~~~
+../src/Controller.c:59:4: error: ‘id’ undeclared (first use in this function)
+    id, nombre , horasTrabajadas , sueldo);
+    ^~
+../src/Controller.c:59:17: error: ‘horasTrabajadas’ undeclared (first use in this function)
+    id, nombre , horasTrabajadas , sueldo);
+                 ^~~~~~~~~~~~~~~
+../src/Controller.c:59:35: error: ‘sueldo’ undeclared (first use in this function)
+    id, nombre , horasTrabajadas , sueldo);
+                                   ^~~~~~
+make: *** [src/Controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:54:50 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_EmployeeFromText’ [-Wimplicit-function-declaration]
+    parser_EmployeeFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:36:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_ListCachorro’:
+../src/Controller.c:51:26: error: ‘id_cachorro’ undeclared (first use in this function)
+  cachorro_getId(cachorro,id_cachorro);
+                          ^~~~~~~~~~~
+../src/Controller.c:51:26: note: each undeclared identifier is reported only once for each function it appears in
+../src/Controller.c:52:30: error: ‘nombre’ undeclared (first use in this function)
+  cachorro_getNombre(cachorro,nombre);
+                              ^~~~~~
+../src/Controller.c:53:29: error: ‘dias’ undeclared (first use in this function)
+  cachorro_getDias(cachorro, dias);
+                             ^~~~
+../src/Controller.c:54:33: error: ‘reservado’ undeclared (first use in this function)
+  cachorro_getReservado(cachorro,reservado);
+                                 ^~~~~~~~~
+../src/Controller.c:55:30: error: ‘genero’ undeclared (first use in this function)
+  cachorro_getGenero(cachorro,genero);
+                              ^~~~~~
+../src/Controller.c:59:4: error: ‘id’ undeclared (first use in this function)
+    id, nombre , horasTrabajadas , sueldo);
+    ^~
+../src/Controller.c:59:17: error: ‘horasTrabajadas’ undeclared (first use in this function)
+    id, nombre , horasTrabajadas , sueldo);
+                 ^~~~~~~~~~~~~~~
+../src/Controller.c:59:35: error: ‘sueldo’ undeclared (first use in this function)
+    id, nombre , horasTrabajadas , sueldo);
+                                   ^~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Controller.o'
+make: *** [src/Controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:55:09 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_EmployeeFromText’ [-Wimplicit-function-declaration]
+    parser_EmployeeFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:36:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_ListCachorro’:
+../src/Controller.c:51:26: error: ‘id_cachorro’ undeclared (first use in this function)
+  cachorro_getId(cachorro,id_cachorro);
+                          ^~~~~~~~~~~
+../src/Controller.c:51:26: note: each undeclared identifier is reported only once for each function it appears in
+../src/Controller.c:52:30: error: ‘nombre’ undeclared (first use in this function)
+  cachorro_getNombre(cachorro,nombre);
+                              ^~~~~~
+../src/Controller.c:53:29: error: ‘dias’ undeclared (first use in this function)
+  cachorro_getDias(cachorro, dias);
+                             ^~~~
+../src/Controller.c:54:33: error: ‘reservado’ undeclared (first use in this function)
+  cachorro_getReservado(cachorro,reservado);
+                                 ^~~~~~~~~
+../src/Controller.c:55:30: error: ‘genero’ undeclared (first use in this function)
+  cachorro_getGenero(cachorro,genero);
+                              ^~~~~~
+../src/Controller.c:59:4: error: ‘id’ undeclared (first use in this function)
+    id, nombre , horasTrabajadas , sueldo);
+    ^~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Controller.o'
+../src/Controller.c:59:17: error: ‘horasTrabajadas’ undeclared (first use in this function)
+    id, nombre , horasTrabajadas , sueldo);
+                 ^~~~~~~~~~~~~~~
+../src/Controller.c:59:35: error: ‘sueldo’ undeclared (first use in this function)
+    id, nombre , horasTrabajadas , sueldo);
+                                   ^~~~~~
+make: *** [src/Controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:56:27 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_EmployeeFromText’ [-Wimplicit-function-declaration]
+    parser_EmployeeFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:36:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_ListCachorro’:
+../src/Controller.c:51:26: error: ‘id_cachorro’ undeclared (first use in this function)
+  cachorro_getId(cachorro,id_cachorro);
+                          ^~~~~~~~~~~
+../src/Controller.c:51:26: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Controller.o'
+../src/Controller.c:52:30: error: ‘nombre’ undeclared (first use in this function)
+  cachorro_getNombre(cachorro,nombre);
+                              ^~~~~~
+../src/Controller.c:53:29: error: ‘dias’ undeclared (first use in this function)
+  cachorro_getDias(cachorro, dias);
+                             ^~~~
+../src/Controller.c:54:33: error: ‘reservado’ undeclared (first use in this function)
+  cachorro_getReservado(cachorro,reservado);
+                                 ^~~~~~~~~
+../src/Controller.c:55:30: error: ‘genero’ undeclared (first use in this function)
+  cachorro_getGenero(cachorro,genero);
+                              ^~~~~~
+make: *** [src/Controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:56:28 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_EmployeeFromText’ [-Wimplicit-function-declaration]
+    parser_EmployeeFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:36:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_ListCachorro’:
+../src/Controller.c:51:26: error: ‘id_cachorro’ undeclared (first use in this function)
+  cachorro_getId(cachorro,id_cachorro);
+                          ^~~~~~~~~~~
+../src/Controller.c:51:26: note: each undeclared identifier is reported only once for each function it appears in
+../src/Controller.c:52:30: error: ‘nombre’ undeclared (first use in this function)
+  cachorro_getNombre(cachorro,nombre);
+                              ^~~~~~
+../src/Controller.c:53:29: error: ‘dias’ undeclared (first use in this function)
+  cachorro_getDias(cachorro, dias);
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Controller.o'
+                             ^~~~
+../src/Controller.c:54:33: error: ‘reservado’ undeclared (first use in this function)
+  cachorro_getReservado(cachorro,reservado);
+                                 ^~~~~~~~~
+../src/Controller.c:55:30: error: ‘genero’ undeclared (first use in this function)
+  cachorro_getGenero(cachorro,genero);
+                              ^~~~~~
+make: *** [src/Controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:56:39 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_EmployeeFromText’ [-Wimplicit-function-declaration]
+    parser_EmployeeFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:36:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+19:56:44 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_EmployeeFromText’ [-Wimplicit-function-declaration]
+    parser_EmployeeFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:36:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+19:56:45 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.

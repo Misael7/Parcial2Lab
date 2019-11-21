@@ -29,7 +29,7 @@ Cachorro* cachorro_newParametros(char* id_cachorro,char* nombre,char* dias,char*
 				cachorro_setNombre(this,nombre) == EXIT_SUCCESS &&
 				cachorro_setDias(this,dias) == EXIT_SUCCESS &&
 				cachorro_setReservado(this,reservado) == EXIT_SUCCESS &&
-				cachorro_setGenero(this,genero) == EXIT_SUCCESS)
+				cachorro_setSueldo(this,genero) == EXIT_SUCCESS)
 		{
 
 				retorno = this;

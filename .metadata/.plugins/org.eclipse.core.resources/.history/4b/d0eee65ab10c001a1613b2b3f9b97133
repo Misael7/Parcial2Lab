@@ -25,14 +25,12 @@ int main(void)
            switch(option)
            {
                case 1:
-                   controller_loadFromText("cachorros.csv",listaEmpleados);
+                   controller_loadFromText("data.csv",listaEmpleados);
                    break;
 
                case 2:
-               	controller_loadFromBinary("cachorros.bin",listaEmpleados);
+               	controller_loadFromBinary("data.bin",listaEmpleados);
                	break;
-
-
 
 
            }

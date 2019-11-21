@@ -33,8 +33,6 @@ int main(void)
                	break;
 
 
-
-
            }
        }while(option != 10);
        return 0;

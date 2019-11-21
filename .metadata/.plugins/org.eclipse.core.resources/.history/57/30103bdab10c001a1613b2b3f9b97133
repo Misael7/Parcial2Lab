@@ -42,11 +42,6 @@ int controller_loadFromBinary(char* path , LinkedList* pListCachorro)
 
 int controller_ListCachorro(LinkedList* pListCachorro)
 {
-	char id_cachorro[50];
-	char nombre[50];
-	char dias[50];
-	char reservado[50];
-	char genero[50];
 
 	for(int i =0 ; i <ll_len(pListCachorro); i++)
 	{
@@ -55,12 +50,11 @@ int controller_ListCachorro(LinkedList* pListCachorro)
 	//change to getter setter
 	cachorro_getId(cachorro,id_cachorro);
 	cachorro_getNombre(cachorro,nombre);
-	cachorro_getDias(cachorro, dias);
-	cachorro_getReservado(cachorro,reservado);
-	cachorro_getGenero(cachorro,genero);
-
+	employee_getHorasTrabajadas(empleado,&horasTrabajadas);
+	employee_getSueldo(empleado,&sueldo);
 	//change to getter setter
-	printf("\nID Cachorro %s\nNombre  %s\n dias %s\n reservado%s\n genero%s\n",id_cachorro, nombre , dias , reservado, genero);
+	printf("\nID Empleado %d\nNombre Empleado  %s\nHoras Trabajadas %d\nSueldo %d\n",/* empleado->id , empleado->nombre , empleado->horasTrabajadas , empleado->sueldo*/
+			id, nombre , horasTrabajadas , sueldo);
 	}
     return 1;
 }

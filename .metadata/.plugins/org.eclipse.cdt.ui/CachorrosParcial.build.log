@@ -1,16 +1,6 @@
-19:44:44 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+19:56:45 **** Incremental Build of configuration Debug for project CachorrosParcial ****
 make all 
-Building target: CachorrosParcial
-Invoking: GCC C Linker
-gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
-./src/Cachorros.o: En la función `cachorro_newParametros':
-/home/alumno/parcial2cortes/CachorrosParcial/Debug/../src/Cachorros.c:30: referencia a `cachorro_setHorasTrabajadas' sin definir
-makefile:30: fallo en las instrucciones para el objetivo 'CachorrosParcial'
-/home/alumno/parcial2cortes/CachorrosParcial/Debug/../src/Cachorros.c:31: referencia a `cachorro_setSueldo' sin definir
-/home/alumno/parcial2cortes/CachorrosParcial/Debug/../src/Cachorros.c:32: referencia a `cachorro_setSueldo' sin definir
-collect2: error: ld returned 1 exit status
-make: *** [CachorrosParcial] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
+make: No se hace nada para 'all'.
 
-19:44:44 Build Failed. 5 errors, 0 warnings. (took 293ms)
+19:56:45 Build Finished. 0 errors, 0 warnings. (took 291ms)
 
