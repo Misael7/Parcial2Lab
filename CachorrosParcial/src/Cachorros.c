@@ -21,12 +21,6 @@ Cachorro* cachorro_newParametros(char* id_cachorro,char* nombre,char* dias,char*
 {
 	Cachorro *retorno = NULL;
 	Cachorro *this;
-	strcpy(id_cachorro,id_cachorro);
-	strcpy(nombre,nombre);
-	strcpy(dias,dias);
-	strcpy(raza,raza);
-	strcpy(reservado,reservado);
-	strcpy(genero,genero);
 	this = cachorro_new();
 
 	if(this != NULL)
@@ -39,7 +33,7 @@ Cachorro* cachorro_newParametros(char* id_cachorro,char* nombre,char* dias,char*
 				cachorro_setGenero(this,genero) == EXIT_SUCCESS)
 
 		{
-				printf("\n Cachorros setteados \n");
+				printf("\n Cachorros setteados %s \n",this->nombre);
 				retorno = this;
 		}
 		else
@@ -55,7 +49,6 @@ Cachorro* cachorro_newParametros(char* id_cachorro,char* nombre,char* dias,char*
 int cachorro_setId(Cachorro* this,char* id_cachorro)
 {
 	int retorno = EXIT_FAILURE;
-
 		if(this != NULL)
 		{
 			strcpy(this->id_cachorro,id_cachorro);
@@ -74,7 +67,7 @@ int cachorro_getId(Cachorro* this,char* id_cachorro)
 		retorno = EXIT_SUCCESS;
 	}
 
-	return retorno;
+	return 1;
 }
 
 int cachorro_setNombre(Cachorro* this,char* nombre)

@@ -5,6 +5,7 @@
  *      Author: alumno
  */
 #include "Controller.h"
+#include "Cachorros.h"
 int controller_loadFromText(char* path , LinkedList* pListCachorro)
 {
 	FILE* pFile;
@@ -51,18 +52,26 @@ int controller_ListCachorro(LinkedList* pListCachorro)
 	char reservado[50];
 	char genero[50];
 	int length=ll_len(pListCachorro);
-	printf("Length lista %d\n",length);
-	for(int i =0 ; i <=length; i++)
-	{
 	Cachorro* cachorro;
+	Cachorro auxca;
+	cachorro=ll_get(pListCachorro, 1);
+	printf("AAAA %s\n",cachorro->id_cachorro);
+	printf("asdasd %s\n",auxca.id_cachorro);
+	printf("Length lista %d\n",length);
+/*	for(int i =0 ; i <=length; i++)
+	{
 	cachorro=ll_get(pListCachorro, i);
-	cachorro_getId(cachorro,id_cachorro);
-	cachorro_getNombre(cachorro,nombre);
-	cachorro_getDias(cachorro, dias);
-	cachorro_getRaza(cachorro,raza);
-	cachorro_getReservado(cachorro,reservado);
-	cachorro_getGenero(cachorro,genero);
+	printf("B %s\n",cachorro->id_cachorro);
+		if(cachorro!=NULL)
+		{
+			cachorro_getId(cachorro,id_cachorro);
+			cachorro_getNombre(cachorro,nombre);
+			cachorro_getDias(cachorro, dias);
+			cachorro_getRaza(cachorro,raza);
+			cachorro_getReservado(cachorro,reservado);
+			cachorro_getGenero(cachorro,genero);
+		}
 	printf("\nID Cachorro %s\n Nombre  %s\n dias %s\n raza %s\n reservado %s\n genero %s\n",id_cachorro, nombre , dias , raza, reservado, genero);
-	}
+	}*/
     return 1;
 }

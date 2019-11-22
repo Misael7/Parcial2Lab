@@ -20,6 +20,7 @@ int parser_CachorroFromText(FILE* pFile , LinkedList* pListCachorros)
 			{
 
 					 Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5,var6);
+
 					 if(cachorro!=NULL)
 					 {
 						 ll_add(pListCachorros,cachorro);
