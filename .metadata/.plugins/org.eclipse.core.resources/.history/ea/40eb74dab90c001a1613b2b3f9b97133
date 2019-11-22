@@ -1,0 +1,215 @@
+/*
+ * Cachorros.c
+ *
+ *  Created on: 21 nov. 2019
+ *      Author: alumno
+ */
+
+#include "Cachorros.h"
+#include "LinkedList.h"
+void cachorro_delete()
+{
+	void free(void*);
+}
+
+Cachorro* cachorro_new()
+{
+	return malloc(sizeof(Cachorro));
+}
+
+Cachorro* cachorro_newParametros(char* id_cachorro,char* nombre,char* dias,char* raza,char* reservado, char* genero)
+{
+	Cachorro *retorno = NULL;
+	Cachorro *this;
+	strcpy(id_cachorro,id_cachorro);
+	strcpy(nombre,nombre);
+	strcpy(dias,dias);
+	strcpy(raza,raza);
+	strcpy(reservado,reservado);
+	strcpy(genero,genero);
+
+	this = cachorro_new();
+
+	if(this != NULL)
+	{
+		if(		cachorro_setId(this,id_cachorro) == EXIT_SUCCESS &&
+				cachorro_setNombre(this,nombre) == EXIT_SUCCESS &&
+				cachorro_setDias(this,dias) == EXIT_SUCCESS &&
+				cachorro_setRaza(this,raza) == EXIT_SUCCESS &&
+				cachorro_setReservado(this,reservado) == EXIT_SUCCESS &&
+				cachorro_setGenero(this,genero) == EXIT_SUCCESS)
+
+		{
+				printf("\n Cachorros setteados \n");
+				retorno = this;
+		}
+		else
+		{
+
+			cachorro_delete(this);
+		}
+	}
+	return retorno;
+
+}
+
+int cachorro_setId(Cachorro* this,char* id_cachorro)
+{
+	int retorno = EXIT_FAILURE;
+
+		if(this != NULL)
+		{
+			strcpy(this->id_cachorro,id_cachorro);
+			retorno = EXIT_SUCCESS;
+		}
+
+		return retorno;
+}
+
+int cachorro_getId(Cachorro* this,char* id_cachorro)
+{
+	int retorno = EXIT_FAILURE;
+
+	if(this != NULL && id_cachorro != NULL)
+	{
+		printf("LA CONCHA DE TU HERMANA");
+		strcpy(id_cachorro,this->id_cachorro);
+		retorno = EXIT_SUCCESS;
+	}
+
+	return retorno;
+}
+
+int cachorro_setNombre(Cachorro* this,char* nombre)
+{
+	int retorno = EXIT_FAILURE;
+
+	if(this != NULL)
+	{
+		strcpy(this->nombre,nombre);
+		retorno = EXIT_SUCCESS;
+	}
+
+	return retorno;
+}
+
+int cachorro_getNombre(Cachorro* this,char* nombre)
+{
+	int retorno = EXIT_FAILURE;
+
+	if(this != NULL && nombre != NULL)
+	{
+		strcpy(nombre,this->nombre);
+		retorno = EXIT_SUCCESS;
+	}
+
+	return retorno;
+}
+
+int cachorro_setDias(Cachorro* this,char* dias)
+{
+	int retorno = EXIT_FAILURE;
+
+	if(this != NULL)
+	{
+		strcpy(this->dias,dias);
+		retorno = EXIT_SUCCESS;
+	}
+
+	return retorno;
+}
+
+int cachorro_getDias(Cachorro* this,char* dias)
+{
+	int retorno = EXIT_FAILURE;
+
+	if(this != NULL && dias != NULL)
+	{
+		strcpy(dias,this->dias);
+		retorno = EXIT_SUCCESS;
+	}
+
+	return retorno;
+}
+
+int cachorro_setRaza(Cachorro* this,char* raza)
+{
+	int retorno = EXIT_FAILURE;
+
+	if(this != NULL)
+	{
+		strcpy(this->raza,raza);
+		retorno = EXIT_SUCCESS;
+	}
+
+	return retorno;
+}
+
+int cachorro_getRaza(Cachorro* this,char* raza)
+{
+	int retorno = EXIT_FAILURE;
+
+	if(this != NULL && raza != NULL)
+	{
+		strcpy(raza,this->raza);
+		retorno = EXIT_SUCCESS;
+	}
+
+	return retorno;
+}
+
+
+
+
+int cachorro_setReservado(Cachorro* this,char* reservado)
+{
+	int retorno = EXIT_FAILURE;
+
+	if(this != NULL)
+	{
+		strcpy(this->reservado,reservado);
+		retorno = EXIT_SUCCESS;
+	}
+
+	return retorno;
+}
+
+int cachorro_getReservado(Cachorro* this,char* reservado)
+{
+	int retorno = EXIT_FAILURE;
+
+	if(this != NULL && reservado != NULL)
+	{
+		strcpy(reservado,this->reservado);
+		retorno = EXIT_SUCCESS;
+	}
+
+	return retorno;
+}
+
+int cachorro_setGenero(Cachorro* this,char* genero)
+{
+	int retorno = EXIT_FAILURE;
+
+	if(this != NULL)
+	{
+		strcpy(this->genero,genero);
+		retorno = EXIT_SUCCESS;
+	}
+
+	return retorno;
+}
+
+int cachorro_getGenero(Cachorro* this,char* genero)
+{
+	int retorno = EXIT_FAILURE;
+
+	if(this != NULL && genero != NULL)
+	{
+		strcpy(genero,this->genero);
+		retorno = EXIT_SUCCESS;
+	}
+
+	return retorno;
+}
+

@@ -651,5 +651,18 @@ int ll_map(LinkedList* this, int (*pFunc)(void*))
 }
 
 
+LinkedList* ll_filter(LinkedList* this, int(*pFunc)(void* element))
+{
+	int returnAux=-1;
+	int length = ll_len(this);
+
+	if(this!=NULL && pFunc!=NULL)
+	{
+
+	}
+
+	return returnAux;
+}
+
 
 

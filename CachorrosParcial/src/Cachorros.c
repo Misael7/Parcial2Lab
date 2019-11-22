@@ -17,10 +17,16 @@ Cachorro* cachorro_new()
 	return malloc(sizeof(Cachorro));
 }
 
-Cachorro* cachorro_newParametros(char* id_cachorro,char* nombre,char* dias,char* reservado, char* genero)
+Cachorro* cachorro_newParametros(char* id_cachorro,char* nombre,char* dias,char* raza,char* reservado, char* genero)
 {
 	Cachorro *retorno = NULL;
 	Cachorro *this;
+	strcpy(id_cachorro,id_cachorro);
+	strcpy(nombre,nombre);
+	strcpy(dias,dias);
+	strcpy(raza,raza);
+	strcpy(reservado,reservado);
+	strcpy(genero,genero);
 	this = cachorro_new();
 
 	if(this != NULL)
@@ -28,6 +34,7 @@ Cachorro* cachorro_newParametros(char* id_cachorro,char* nombre,char* dias,char*
 		if(		cachorro_setId(this,id_cachorro) == EXIT_SUCCESS &&
 				cachorro_setNombre(this,nombre) == EXIT_SUCCESS &&
 				cachorro_setDias(this,dias) == EXIT_SUCCESS &&
+				cachorro_setRaza(this,raza) == EXIT_SUCCESS &&
 				cachorro_setReservado(this,reservado) == EXIT_SUCCESS &&
 				cachorro_setGenero(this,genero) == EXIT_SUCCESS)
 
@@ -61,7 +68,6 @@ int cachorro_setId(Cachorro* this,char* id_cachorro)
 int cachorro_getId(Cachorro* this,char* id_cachorro)
 {
 	int retorno = EXIT_FAILURE;
-
 	if(this != NULL && id_cachorro != NULL)
 	{
 		strcpy(id_cachorro,this->id_cachorro);

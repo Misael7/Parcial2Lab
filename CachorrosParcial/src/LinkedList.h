@@ -48,5 +48,5 @@ int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order);
 void ll_swapper(Node *first,Node *second);
 int ll_map(LinkedList* this, int (*pFunc)(void*));
 int ll_counter(LinkedList* this, int (*pFunc)(void*));
-
+LinkedList* ll_filter(LinkedList* this, int(*pFunc)(void* element));
  /* LINKEDLIST_H_ */

@@ -5282,3 +5282,1458 @@ make: No se hace nada para 'all'.
 20:28:26 **** Incremental Build of configuration Debug for project CachorrosParcial ****
 make all 
 make: No se hace nada para 'all'.
+20:29:38 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:29:38 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:29:41 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:29:54 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:29:54 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:29:57 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:30:11 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:30:12 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:30:14 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:30:25 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:30:26 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:30:28 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:30:35 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:30:38 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:31:03 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:31:03 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:31:06 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:31:59 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:31:59 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:32:02 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:32:19 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:32:21 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:32:23 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:32:51 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:32:52 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:32:55 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:33:22 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:33:23 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:33:49 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:33:49 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:33:51 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:33:58 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_ListCachorro’:
+../src/Controller.c:64:26: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘int *’ [-Wformat=]
+  printf("Before print\n %d",&a);
+                          ^
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:33:59 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:34:01 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:34:18 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_ListCachorro’:
+../src/Controller.c:64:24: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘int *’ [-Wformat=]
+  printf("Before print %d \n ",&a);
+                        ^
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:34:20 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:34:35 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:35:35 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_ListCachorro’:
+../src/Controller.c:64:30: error: ‘a’ undeclared (first use in this function)
+  printf("Before print %d \n",a);
+                              ^
+../src/Controller.c:64:30: note: each undeclared identifier is reported only once for each function it appears in
+../src/Controller.c:54:6: warning: unused variable ‘length’ [-Wunused-variable]
+  int length=ll_len(pListCachorro);
+      ^~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Controller.o'
+make: *** [src/Controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:35:37 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_ListCachorro’:
+../src/Controller.c:64:30: error: ‘a’ undeclared (first use in this function)
+  printf("Before print %d \n",a);
+                              ^
+../src/Controller.c:64:30: note: each undeclared identifier is reported only once for each function it appears in
+../src/Controller.c:54:6: warning: unused variable ‘length’ [-Wunused-variable]
+  int length=ll_len(pListCachorro);
+      ^~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Controller.o'
+make: *** [src/Controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:35:38 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_ListCachorro’:
+../src/Controller.c:64:30: error: ‘a’ undeclared (first use in this function)
+  printf("Before print %d \n",a);
+                              ^
+../src/Controller.c:64:30: note: each undeclared identifier is reported only once for each function it appears in
+../src/Controller.c:54:6: warning: unused variable ‘length’ [-Wunused-variable]
+  int length=ll_len(pListCachorro);
+      ^~~~~~
+make: *** [src/Controller.o] Error 1
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Controller.o'
+"make all" terminated with exit code 2. Build might be incomplete.
+20:35:39 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_ListCachorro’:
+../src/Controller.c:64:30: error: ‘a’ undeclared (first use in this function)
+  printf("Before print %d \n",a);
+                              ^
+../src/Controller.c:64:30: note: each undeclared identifier is reported only once for each function it appears in
+../src/Controller.c:54:6: warning: unused variable ‘length’ [-Wunused-variable]
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Controller.o'
+  int length=ll_len(pListCachorro);
+      ^~~~~~
+make: *** [src/Controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:35:44 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_ListCachorro’:
+../src/Controller.c:64:30: error: ‘a’ undeclared (first use in this function)
+  printf("Before print %d \n",a);
+                              ^
+../src/Controller.c:64:30: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Controller.o'
+../src/Controller.c:54:6: warning: unused variable ‘length’ [-Wunused-variable]
+  int length=ll_len(pListCachorro);
+      ^~~~~~
+make: *** [src/Controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:35:45 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_ListCachorro’:
+../src/Controller.c:64:30: error: ‘a’ undeclared (first use in this function)
+  printf("Before print %d \n",a);
+                              ^
+../src/Controller.c:64:30: note: each undeclared identifier is reported only once for each function it appears in
+../src/Controller.c:54:6: warning: unused variable ‘length’ [-Wunused-variable]
+  int length=ll_len(pListCachorro);
+      ^~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Controller.o'
+make: *** [src/Controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:36:06 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:36:08 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:36:11 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:36:41 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:36:42 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:36:44 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:37:37 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:37:38 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:37:40 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:37:50 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:37:51 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:37:53 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:39:29 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_CachorroFromText’:
+../src/parser.c:23:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5,var6);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:23:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:14:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:50:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:50:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+Finished building: ../src/parser.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:39:30 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:39:33 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:40:31 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:31:27: error: ‘raza’ undeclared (first use in this function)
+     cachorro_setRaza(this,raza) == EXIT_SUCCESS &&
+                           ^~~~
+../src/Cachorros.c:31:27: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Cachorros.o'
+make: *** [src/Cachorros.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:40:31 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_newParametros’:
+../src/Cachorros.c:31:27: error: ‘raza’ undeclared (first use in this function)
+     cachorro_setRaza(this,raza) == EXIT_SUCCESS &&
+                           ^~~~
+../src/Cachorros.c:31:27: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Cachorros.o'
+make: *** [src/Cachorros.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:40:44 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+Finished building: ../src/Cachorros.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:40:45 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:40:47 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:43:13 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+Finished building: ../src/Cachorros.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:43:14 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:43:17 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:44:40 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:44:41 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:44:44 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:45:03 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:45:03 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:45:05 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:46:44 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:46:44 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:46:48 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:47:03 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:47:03 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:47:05 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:47:13 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_ListCachorro’:
+../src/Controller.c:52:7: warning: unused variable ‘genero’ [-Wunused-variable]
+  char genero[50];
+       ^~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:47:25 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_ListCachorro’:
+../src/Controller.c:57:12: warning: variable ‘cachorro’ set but not used [-Wunused-but-set-variable]
+  Cachorro* cachorro;
+            ^~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:47:33 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:47:36 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:47:47 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:47:47 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:48:18 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_getGenero’:
+../src/Cachorros.c:206:39: error: expected expression before ‘)’ token
+  if(this != NULL && /*genero != NULL*/)
+                                       ^
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Cachorros.o'
+make: *** [src/Cachorros.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:48:19 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c: In function ‘cachorro_getGenero’:
+../src/Cachorros.c:206:39: error: expected expression before ‘)’ token
+  if(this != NULL && /*genero != NULL*/)
+                                       ^
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Cachorros.o'
+make: *** [src/Cachorros.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:48:39 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+Finished building: ../src/Cachorros.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:49:00 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:49:11 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+Finished building: ../src/Cachorros.c
+ 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_ListCachorro’:
+../src/Controller.c:57:12: warning: variable ‘cachorro’ set but not used [-Wunused-but-set-variable]
+  Cachorro* cachorro;
+            ^~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:49:12 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:49:47 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+Finished building: ../src/Cachorros.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:49:47 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:49:50 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:50:32 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:50:36 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:51:03 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c:69:5: error: conflicting types for ‘cachorro_getId’
+ int cachorro_getId(Cachorro* this,char id_cachorro)
+     ^~~~~~~~~~~~~~
+In file included from ../src/Cachorros.c:8:0:
+../src/Cachorros.h:22:5: note: previous declaration of ‘cachorro_getId’ was here
+ int cachorro_getId(Cachorro* this,char* id_cachorro);
+     ^~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_getId’:
+../src/Cachorros.c:73:33: warning: comparison between pointer and integer
+  if(this != NULL && id_cachorro != NULL)
+                                 ^~
+../src/Cachorros.c:76:10: warning: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(id_cachorro,this->id_cachorro);
+          ^~~~~~~~~~~
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Cachorros.o'
+              ^~~~~~
+make: *** [src/Cachorros.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:51:04 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c:69:5: error: conflicting types for ‘cachorro_getId’
+ int cachorro_getId(Cachorro* this,char id_cachorro)
+     ^~~~~~~~~~~~~~
+In file included from ../src/Cachorros.c:8:0:
+../src/Cachorros.h:22:5: note: previous declaration of ‘cachorro_getId’ was here
+ int cachorro_getId(Cachorro* this,char* id_cachorro);
+     ^~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_getId’:
+../src/Cachorros.c:73:33: warning: comparison between pointer and integer
+  if(this != NULL && id_cachorro != NULL)
+                                 ^~
+../src/Cachorros.c:76:10: warning: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(id_cachorro,this->id_cachorro);
+          ^~~~~~~~~~~
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Cachorros.o'
+make: *** [src/Cachorros.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:51:05 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c:69:5: error: conflicting types for ‘cachorro_getId’
+ int cachorro_getId(Cachorro* this,char id_cachorro)
+     ^~~~~~~~~~~~~~
+In file included from ../src/Cachorros.c:8:0:
+../src/Cachorros.h:22:5: note: previous declaration of ‘cachorro_getId’ was here
+ int cachorro_getId(Cachorro* this,char* id_cachorro);
+     ^~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_getId’:
+../src/Cachorros.c:73:33: warning: comparison between pointer and integer
+  if(this != NULL && id_cachorro != NULL)
+                                 ^~
+../src/Cachorros.c:76:10: warning: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(id_cachorro,this->id_cachorro);
+          ^~~~~~~~~~~
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+make: *** [src/Cachorros.o] Error 1
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Cachorros.o'
+"make all" terminated with exit code 2. Build might be incomplete.
+20:51:07 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+../src/Cachorros.c:69:5: error: conflicting types for ‘cachorro_getId’
+ int cachorro_getId(Cachorro* this,char id_cachorro)
+     ^~~~~~~~~~~~~~
+In file included from ../src/Cachorros.c:8:0:
+../src/Cachorros.h:22:5: note: previous declaration of ‘cachorro_getId’ was here
+ int cachorro_getId(Cachorro* this,char* id_cachorro);
+     ^~~~~~~~~~~~~~
+../src/Cachorros.c: In function ‘cachorro_getId’:
+../src/Cachorros.c:73:33: warning: comparison between pointer and integer
+  if(this != NULL && id_cachorro != NULL)
+                                 ^~
+../src/Cachorros.c:76:10: warning: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strcpy(id_cachorro,this->id_cachorro);
+          ^~~~~~~~~~~
+In file included from ../src/LinkedList.h:12:0,
+                 from ../src/Cachorros.c:9:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Cachorros.o'
+make: *** [src/Cachorros.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:51:10 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+Finished building: ../src/Cachorros.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:51:12 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:51:18 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:51:36 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+Finished building: ../src/Cachorros.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:52:01 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+Finished building: ../src/Cachorros.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:52:02 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:52:51 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+Finished building: ../src/Cachorros.c
+ 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:53:02 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:53:03 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:53:20 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_ListCachorro’:
+../src/Controller.c:57:12: warning: variable ‘cachorro’ set but not used [-Wunused-but-set-variable]
+  Cachorro* cachorro;
+            ^~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:53:21 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:53:23 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:53:36 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:53:38 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:54:02 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+Finished building: ../src/Cachorros.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:54:03 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:54:05 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:54:28 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+Finished building: ../src/Cachorros.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:54:29 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:54:43 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:54:44 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:56:26 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:57:48 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_CachorroFromText’:
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5,var6);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:14:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:49:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:49:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+Finished building: ../src/parser.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:58:17 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:58:18 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:58:56 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/Cachorros.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cachorros.d" -MT"src/Cachorros.o" -o "src/Cachorros.o" "../src/Cachorros.c"
+Finished building: ../src/Cachorros.c
+ 
+Building file: ../src/CachorrosParcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CachorrosParcial.d" -MT"src/CachorrosParcial.o" -o "src/CachorrosParcial.o" "../src/CachorrosParcial.c"
+../src/CachorrosParcial.c: In function ‘main’:
+../src/CachorrosParcial.c:14:15: warning: implicit declaration of function ‘__fpurge’ [-Wimplicit-function-declaration]
+ #define FLUSH __fpurge(stdin);
+               ^
+../src/CachorrosParcial.c:25:9: note: in expansion of macro ‘FLUSH’
+         FLUSH;
+         ^~~~~
+../src/CachorrosParcial.c:30:20: warning: implicit declaration of function ‘controller_loadFromText’ [-Wimplicit-function-declaration]
+                    controller_loadFromText("cachorros.csv",pListCachorro);
+                    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/CachorrosParcial.c:34:17: warning: implicit declaration of function ‘controller_loadFromBinary’ [-Wimplicit-function-declaration]
+                 controller_loadFromBinary("cachorros.bin",pListCachorro);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/CachorrosParcial.c:38:17: warning: implicit declaration of function ‘controller_ListCachorro’ [-Wimplicit-function-declaration]
+                 controller_ListCachorro(pListCachorro);
+                 ^~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/CachorrosParcial.c
+ 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+../src/Controller.c: In function ‘controller_loadFromText’:
+../src/Controller.c:19:4: warning: implicit declaration of function ‘parser_CachorroFromText’ [-Wimplicit-function-declaration]
+    parser_CachorroFromText(pFile, pListCachorro);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Controller.c: In function ‘controller_loadFromBinary’:
+../src/Controller.c:37:5: warning: implicit declaration of function ‘parser_EmployeeFromBinary’ [-Wimplicit-function-declaration]
+     parser_EmployeeFromBinary(pFile, pListCachorro);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Controller.c
+ 
+Building file: ../src/LinkedList.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.o" -o "src/LinkedList.o" "../src/LinkedList.c"
+../src/LinkedList.c: In function ‘ll_add’:
+../src/LinkedList.c:193:11: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   auxNode = addNode(this,length, pElement);
+           ^
+../src/LinkedList.c:188:8: warning: variable ‘auxNode’ set but not used [-Wunused-but-set-variable]
+  Node* auxNode;
+        ^~~~~~~
+Finished building: ../src/LinkedList.c
+ 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘parser_CachorroFromText’:
+../src/parser.c:22:28: warning: implicit declaration of function ‘cachorro_newParametros’ [-Wimplicit-function-declaration]
+       Cachorro* cachorro = cachorro_newParametros(var1,var2,var3,var4,var5,var6);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.c:22:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+../src/parser.c:14:6: warning: unused variable ‘pos’ [-Wunused-variable]
+  int pos=0;
+      ^~~
+../src/parser.c: In function ‘parser_EmployeeFromBinary’:
+../src/parser.c:49:14: warning: implicit declaration of function ‘cachorro_new’ [-Wimplicit-function-declaration]
+   cachorro = cachorro_new();
+              ^~~~~~~~~~~~
+../src/parser.c:49:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   cachorro = cachorro_new();
+            ^
+Finished building: ../src/parser.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+20:58:57 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+20:59:21 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+21:00:34 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+Building file: ../src/LinkedList.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.o" -o "src/LinkedList.o" "../src/LinkedList.c"
+../src/LinkedList.c: In function ‘ll_add’:
+../src/LinkedList.c:193:11: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   auxNode = addNode(this,length, pElement);
+           ^
+../src/LinkedList.c:188:8: warning: variable ‘auxNode’ set but not used [-Wunused-but-set-variable]
+  Node* auxNode;
+        ^~~~~~~
+../src/LinkedList.c: In function ‘ll_filter’:
+../src/LinkedList.c:664:9: warning: return makes pointer from integer without a cast [-Wint-conversion]
+  return returnAux;
+         ^~~~~~~~~
+../src/LinkedList.c:657:6: warning: unused variable ‘length’ [-Wunused-variable]
+  int length = ll_len(this);
+      ^~~~~~
+Finished building: ../src/LinkedList.c
+ 
+Building target: CachorrosParcial
+Invoking: GCC C Linker
+gcc  -o "CachorrosParcial"  ./src/Cachorros.o ./src/CachorrosParcial.o ./src/Controller.o ./src/LinkedList.o ./src/parser.o   
+Finished building target: CachorrosParcial
+ 
+21:00:35 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
+21:00:51 **** Incremental Build of configuration Debug for project CachorrosParcial ****
+make all 
+make: No se hace nada para 'all'.
